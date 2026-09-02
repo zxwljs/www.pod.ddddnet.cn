@@ -12,7 +12,7 @@ module.exports = {
   topics: [
     // ===== Temu 半托管代发 =====
     { topic: 'Temu半托管一件代发完整流程教程', keywords: ['Temu半托管', '一件代发', '代发流程'], category: 'Temu半托管代发' },
-    { topic: 'Temu半托管散户如何零库存创业', keywords: ['Temu半托管', '零库存', '散户创业'], category: 'Temu半托管代发' },
+    { topic: 'Temu半托管卖家如何零库存创业', keywords: ['Temu半托管', '零库存', '卖家创业'], category: 'Temu半托管代发' },
     { topic: 'Temu半托管代发平台怎么选', keywords: ['Temu代发', '代发平台', '半托管'], category: 'Temu半托管代发' },
     { topic: 'Temu半托管自动拉单教程', keywords: ['Temu拉单', '自动拉单', '半托管'], category: 'Temu半托管代发' },
     { topic: 'Temu半托管多区域店铺管理(125/225/325/525)', keywords: ['Temu多区域', '125', '225', '半托管'], category: 'Temu半托管代发' },
@@ -53,7 +53,7 @@ module.exports = {
     { topic: '分销中台如何做资金结算', keywords: ['分销中台', '资金结算', '余额'], category: '分销中台' },
     { topic: '分销中台白标模式解析', keywords: ['分销中台', '白标', '隐身'], category: '分销中台' },
     { topic: '代发中台如何保证数据隔离', keywords: ['代发', '数据隔离', '多租户'], category: '分销中台' },
-    { topic: '分销中台对接方果OpenAPI', keywords: ['分销中台', '方果', 'OpenAPI'], category: '分销中台' },
+    { topic: '分销中台对接工厂OpenAPI', keywords: ['分销中台', '工厂', 'OpenAPI'], category: '分销中台' },
     { topic: '工厂直供分销中台搭建', keywords: ['工厂直供', '分销中台', '搭建'], category: '分销中台' },
     { topic: '分销中台邮件提醒通知', keywords: ['分销中台', '邮件提醒', '通知'], category: '分销中台' },
     { topic: '分销中台与ERP区别', keywords: ['分销中台', 'ERP', '区别'], category: '分销中台' },

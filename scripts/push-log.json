@@ -1,1 +1,28 @@
-{}
+{
+  "updatedAt": "2026-09-02T09:17:01.485Z",
+  "urlCount": 3,
+  "urls": [
+    "https://www.pod.ddddnet.cn/blog/",
+    "https://www.pod.ddddnet.cn/sitemap.xml",
+    "https://www.pod.ddddnet.cn/blog/posts/optimizing-product-detail-page-for-temu-semi-managed-sellers.html"
+  ],
+  "results": {
+    "indexnow": {
+      "success": true,
+      "status": 200,
+      "endpoint": "https://api.indexnow.org/indexnow",
+      "urlCount": 3
+    },
+    "bing": {
+      "success": false,
+      "status": 404,
+      "error": ""
+    },
+    "baidu": {
+      "success": true,
+      "pushed": 2,
+      "remaining": 8,
+      "lastPushedAt": "2026-09-02T09:17:01.485Z"
+    }
+  }
+}

@@ -712,14 +712,14 @@ function generateBlogIndex(posts) {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>跨境电商运营博客${page > 1 ? ' 第' + page + '页' : ''} | ${CONFIG.siteName}</title>
-<meta name="description" content="Temu半托管运营、POD套图技巧、侵权规避、AI工具应用等跨境电商干货文章，持续更新中。" />
+<title>轩宇汇 POD 货盘卖货博客${page > 1 ? ' 第' + page + '页' : ''} | ${CONFIG.siteName}</title>
+<meta name="description" content="轩宇汇美国源头 POD 工厂：服装、水杯等 POD 货盘一件代发，零库存、无资金压力，持续更新跨境电商卖货干货。" />
 <meta name="robots" content="index, follow" />
 ${page === 1 ? `<link rel="canonical" href="${CONFIG.siteUrl}/blog/" />` : `<link rel="canonical" href="${CONFIG.siteUrl}/blog/page/${page}.html" />`}
 ${page > 1 ? `<meta name="robots" content="noindex, follow" />` : ''}
 <meta property="og:type" content="website" />
 <meta property="og:title" content="轩宇汇 POD 货盘卖货博客 | ${CONFIG.siteName}" />
-<meta property="og:description" content="Temu半托管运营、POD套图技巧、侵权规避、AI工具应用等跨境电商干货文章。" />
+<meta property="og:description" content="轩宇汇美国源头 POD 工厂：服装、水杯等 POD 货盘一件代发，零库存、无资金压力，帮你把货卖向全球。" />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb'/%3E%3Cstop offset='100%25' style='stop-color:%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-size='52' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'%3E轩%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -772,8 +772,8 @@ footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color
 
 <div class="wrap">
   <div class="header">
-    <h1>跨境电商<span class="g">运营博客</span></h1>
-    <p>Temu半托管POD一件代发、分销中台、选品运营、白标品牌等干货文章</p>
+    <h1>轩宇汇<span class="g">POD货盘卖货博客</span></h1>
+    <p>Temu半托管POD美国源头工厂：服装、水杯等货盘一件代发、零库存卖货、全球出货干货文章</p>
   </div>
   <div class="grid">${postsHtml}
   </div>${pagerHtml}

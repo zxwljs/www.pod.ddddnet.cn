@@ -1,5 +1,5 @@
-// SEO 选题库 - 围绕轩宇汇（Temu 半托管 POD 一件代发货盘平台）的长尾词矩阵
-// 核心叙事：用轩宇汇现成 POD 货盘（服装/T恤、水杯/马克杯等），零库存、一件代发、无资金压力，把货卖向全球
+// SEO 选题库 - 围绕轩宇汇（Temu 半托管 POD 美国源头工厂货盘）的长尾词矩阵
+// 核心叙事：用轩宇汇美国工厂的现成 POD 货盘（服装/T恤、水杯/马克杯等），零库存、一件代发、无资金压力，把货卖向全球
 // 每次生成时随机选取一个未使用的选题，调用 AI 生成原创文章
 module.exports = {
   // 站点基础信息（生成文章内链、CTA 时使用）
@@ -7,7 +7,7 @@ module.exports = {
     name: '轩宇汇',
     url: 'https://www.pod.ddddnet.cn',
     appUrl: 'https://pod.ddddnet.cn',
-    desc: 'Temu半托管POD一件代发货盘平台',
+    desc: 'Temu半托管POD美国源头工厂货盘',
   },
   // 选题列表：topic=主题方向, keywords=SEO关键词, category=分类
   topics: [
@@ -16,7 +16,7 @@ module.exports = {
     { topic: 'POD马克杯水杯怎么做跨境卖货', keywords: ['POD水杯', '马克杯', '跨境卖货'], category: 'POD货盘卖货' },
     { topic: '零库存做POD把货卖全球真的能赚吗', keywords: ['零库存', 'POD卖全球', '赚差价'], category: 'POD货盘卖货' },
     { topic: '无资金压力起步POD副业卖货', keywords: ['无资金压力', 'POD副业', '轻创业'], category: 'POD货盘卖货' },
-    { topic: '用轩宇汇货盘开店卖货全流程', keywords: ['轩宇汇货盘', '开店卖货', 'POD'], category: 'POD货盘卖货' },
+    { topic: '用轩宇汇美国工厂货盘开店卖货', keywords: ['轩宇汇美国工厂', '货盘开店', 'POD'], category: 'POD货盘卖货' },
     { topic: 'POD货盘选品：服装还是水杯', keywords: ['POD货盘', '服装选品', '水杯选品'], category: 'POD货盘卖货' },
     { topic: 'Temu半托管上架POD货品卖货', keywords: ['Temu半托管', 'POD上架', '货品卖货'], category: 'POD货盘卖货' },
     { topic: 'POD一件代发和传统备货哪个风险小', keywords: ['一件代发', '传统备货', '库存风险'], category: 'POD货盘卖货' },
@@ -46,7 +46,7 @@ module.exports = {
     // ===== POD 一件代发 =====
     { topic: 'POD一件代发是什么', keywords: ['POD', '一件代发', '按需印刷'], category: 'POD一件代发' },
     { topic: 'POD按需印刷代发模式解析', keywords: ['POD', '按需印刷', '代发模式'], category: 'POD一件代发' },
-    { topic: 'POD代发如何对接工厂', keywords: ['POD代发', '对接工厂', '供应链'], category: 'POD一件代发' },
+    { topic: 'POD代发如何选源头工厂', keywords: ['POD代发', '源头工厂', '供应链'], category: 'POD一件代发' },
     { topic: 'POD图案代发全流程', keywords: ['POD图案', '代发流程', '印花'], category: 'POD一件代发' },
     { topic: 'POD代发生意怎么起步', keywords: ['POD代发', '创业起步', '零库存'], category: 'POD一件代发' },
     { topic: 'POD代发平台推荐', keywords: ['POD代发', '平台推荐', '工具'], category: 'POD一件代发' },
@@ -59,21 +59,21 @@ module.exports = {
     { topic: 'POD印花代发注意事项', keywords: ['POD印花', '代发', '注意事项'], category: 'POD一件代发' },
     { topic: 'POD代发自动化流程搭建', keywords: ['POD代发', '自动化', '流程'], category: 'POD一件代发' },
 
-    // ===== 分销中台 / 供应链 =====
-    { topic: '什么是POD分销中台', keywords: ['分销中台', 'POD', '代发系统'], category: '分销中台' },
-    { topic: '分销中台如何对接上游工厂', keywords: ['分销中台', '对接工厂', 'OpenAPI'], category: '分销中台' },
-    { topic: '代发分销系统架构解析', keywords: ['代发系统', '架构', '分销'], category: '分销中台' },
-    { topic: '多租户分销中台是什么', keywords: ['多租户', '分销中台', '隔离'], category: '分销中台' },
-    { topic: '分销中台SKU映射怎么做', keywords: ['SKU映射', '分销中台', '代发'], category: '分销中台' },
-    { topic: '供应链分销中台选型', keywords: ['供应链', '分销中台', '选型'], category: '分销中台' },
-    { topic: '代发系统的订单审核流设计', keywords: ['代发', '订单审核', '资金'], category: '分销中台' },
-    { topic: '分销中台如何做资金结算', keywords: ['分销中台', '资金结算', '余额'], category: '分销中台' },
-    { topic: '分销中台白标模式解析', keywords: ['分销中台', '白标', '隐身'], category: '分销中台' },
-    { topic: '代发中台如何保证数据隔离', keywords: ['代发', '数据隔离', '多租户'], category: '分销中台' },
-    { topic: '分销中台对接工厂OpenAPI', keywords: ['分销中台', '工厂', 'OpenAPI'], category: '分销中台' },
-    { topic: '工厂直供分销中台搭建', keywords: ['工厂直供', '分销中台', '搭建'], category: '分销中台' },
-    { topic: '分销中台邮件提醒通知', keywords: ['分销中台', '邮件提醒', '通知'], category: '分销中台' },
-    { topic: '分销中台与ERP区别', keywords: ['分销中台', 'ERP', '区别'], category: '分销中台' },
+    // ===== 美国源头工厂直供 =====
+    { topic: '轩宇汇美国源头工厂货盘解析', keywords: ['美国源头工厂', '货盘', '轩宇汇'], category: '美国源头工厂直供' },
+    { topic: '美国工厂直供一件代发流程', keywords: ['美国工厂直供', '一件代发', '流程'], category: '美国源头工厂直供' },
+    { topic: '源头工厂怎么保证POD品质', keywords: ['源头工厂', 'POD品质', '质检'], category: '美国源头工厂直供' },
+    { topic: '工厂货盘SKU映射怎么做', keywords: ['工厂货盘', 'SKU映射', '代发'], category: '美国源头工厂直供' },
+    { topic: '美国工厂直供订单审核流', keywords: ['美国工厂', '订单审核', '直供'], category: '美国源头工厂直供' },
+    { topic: '源头工厂资金结算方式', keywords: ['源头工厂', '资金结算', '货款'], category: '美国源头工厂直供' },
+    { topic: '白标代发怎么隐藏源头工厂', keywords: ['白标代发', '隐藏源头工厂', '品牌'], category: '美国源头工厂直供' },
+    { topic: '工厂直供货盘售后怎么处理', keywords: ['工厂直供', '货盘售后', '退货'], category: '美国源头工厂直供' },
+    { topic: '源头工厂多区域发货(125/225/325/525)', keywords: ['源头工厂', '多区域', 'Temu区域'], category: '美国源头工厂直供' },
+    { topic: '美国工厂POD物流回传时效', keywords: ['美国工厂', 'POD物流', '回传时效'], category: '美国源头工厂直供' },
+    { topic: '工厂货盘与平台代发区别', keywords: ['工厂货盘', '平台代发', '区别'], category: '美国源头工厂直供' },
+    { topic: '源头工厂如何管理库存风险', keywords: ['源头工厂', '库存风险', '零库存'], category: '美国源头工厂直供' },
+    { topic: '美国工厂直供价格优势', keywords: ['美国工厂', '价格优势', '直供'], category: '美国源头工厂直供' },
+    { topic: '工厂货盘如何支持全球卖货', keywords: ['工厂货盘', '全球卖货', '直发'], category: '美国源头工厂直供' },
 
     // ===== 选品与运营 =====
     { topic: 'Temu半托管代发选品技巧', keywords: ['Temu代发', '选品技巧', '半托管'], category: '选品运营' },

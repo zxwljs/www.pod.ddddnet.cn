@@ -1,6 +1,6 @@
 # 轩宇汇 官网 · 全自动 SEO 站
 
-Temu 半托管 POD 一件代发分销中台「轩宇汇」的品牌官网与全自动 SEO 内容站，部署在 `www.pod.ddddnet.cn`。
+Temu 半托管 POD 美国源头工厂「轩宇汇」的品牌官网与全自动 SEO 内容站，部署在 `www.pod.ddddnet.cn`。
 
 ## 说明
 
@@ -11,11 +11,12 @@ Temu 半托管 POD 一件代发分销中台「轩宇汇」的品牌官网与全�
 
 ## 业务定位
 
-轩宇汇是面向 TEMU 半托管卖家的 POD 一件代发分销中台，采用白标模式（对接 POD 工厂 OpenAPI）：
+轩宇汇是面向 TEMU 半托管卖家的美国源头 POD 工厂，采用白标模式直供货盘：
 
+- 美国源头工厂直供：服装 / T恤 / 卫衣、水杯 / 马克杯、帆布包、手机壳等 POD 货盘
 - 白标绑店：绑定卖家店铺，自动拉取订单
 - 工厂选品中心：海量 POD 图案 / 品类可直接出单
-- 一键推单工厂代发：零库存创业，赚取货品价差
+- 工厂直发一件代发：零库存创业，赚取货品价差
 - 订单审核流 + 物流状态回传
 - 多区域覆盖：125 / 225 / 325 / 525
 
@@ -36,7 +37,7 @@ website/
 ├── scripts/                                # 自动化脚本
 │   ├── generate-seo.js                     # 调用 GLM-4V-Flash 生成文章
 │   ├── push-seo.js                         # 推送到 Bing (IndexNow + URL Submission API) / 百度
-│   ├── topics.js                           # 静态选题库（96 个，7 大类）
+│   ├── topics.js                           # 静态选题库（110 个，8 大类）
 │   ├── topics-hot.json                     # 动态热点选题（每 7 天更新，GitHub Actions 运行时生成）
 │   ├── generated.json                      # 已生成文章记录（运行时）
 │   └── push-log.json                       # 推送日志（运行时）

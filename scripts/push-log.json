@@ -1,19 +1,20 @@
 {
-  "updatedAt": "2026-09-02T08:41:28.281Z",
-  "urlCount": 5,
+  "updatedAt": "2026-09-02T08:48:45.704Z",
+  "urlCount": 6,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
     "https://www.pod.ddddnet.cn/blog/posts/temu-logistics-return-setting.html",
     "https://www.pod.ddddnet.cn/blog/posts/white-label-customer-experience-temu-semi-managed-selling-zero-inventory.html",
-    "https://www.pod.ddddnet.cn/blog/posts/white-label-risk-control-temu-semi-managed-sellers.html"
+    "https://www.pod.ddddnet.cn/blog/posts/white-label-risk-control-temu-semi-managed-sellers.html",
+    "https://www.pod.ddddnet.cn/blog/posts/white-label-contract-and-authorization-for-temu-semi-managed-sellers.html"
   ],
   "results": {
     "indexnow": {
       "success": true,
       "status": 200,
       "endpoint": "https://api.indexnow.org/indexnow",
-      "urlCount": 5
+      "urlCount": 6
     },
     "bing": {
       "success": false,

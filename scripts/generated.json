@@ -1,6 +1,7 @@
 {
   "usedTopics": [
-    "Temu半托管物流回传怎么设置"
+    "Temu半托管物流回传怎么设置",
+    "白标模式顾客体验"
   ],
   "titles": [],
   "posts": [
@@ -15,7 +16,23 @@
         "运单号",
         "半托管"
       ]
+    },
+    {
+      "slug": "white-label-customer-experience-temu-semi-managed-selling-zero-inventory",
+      "title": "白标模式顾客体验：如何通过Temu半托管实现零库存销售",
+      "description": "本文将详细介绍如何在Temu平台利用白标模式进行跨境销售，实现零库存、一件代发和无资金压力的目标，同时提升顾客体验。我们将探讨如何选择合适的商品，优化供应链管理以及如何处理常见的销售和物流问题。",
+      "category": "白标品牌",
+      "date": "2026-09-02",
+      "keywords": [
+        "白标",
+        "顾客体验",
+        "代发",
+        "Temu",
+        "零库存",
+        "一件代发",
+        "无资金压力"
+      ]
     }
   ],
-  "count": 1
+  "count": 2
 }

@@ -1,6 +1,7 @@
 {
   "usedTopics": [
-    "代发商品详情页优化"
+    "代发商品详情页优化",
+    "代发店铺活动报名"
   ],
   "titles": [],
   "posts": [
@@ -27,7 +28,25 @@
         "无资金压力",
         "全球出货"
       ]
+    },
+    {
+      "slug": "temu-semi-managed-seller-factory-direct-distribution-store-promotion-sign-up-strategy",
+      "title": "Temu半托管卖家的代发店铺活动报名攻略：轻松开启跨境之路",
+      "description": "作为Temu半托管的跨境卖家，你是否正在寻找一种无需大量资金投入且能迅速启动的商业模式？本文将详细介绍如何通过轩宇汇美国工厂的POD服务，实现零库存、一件代发，轻松报名参与Temu的各种店铺活动，让你的产品走向全球市场！",
+      "category": "选品运营",
+      "date": "2026-09-02",
+      "keywords": [
+        "Temu",
+        "半托管",
+        "代发",
+        "活动报名",
+        "POD",
+        "零库存",
+        "一件代发",
+        "无资金压力",
+        "全球销售"
+      ]
     }
   ],
-  "count": 1
+  "count": 2
 }

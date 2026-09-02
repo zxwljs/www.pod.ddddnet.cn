@@ -1,17 +1,18 @@
 {
-  "updatedAt": "2026-09-02T09:17:01.485Z",
-  "urlCount": 3,
+  "updatedAt": "2026-09-02T12:26:42.533Z",
+  "urlCount": 4,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/optimizing-product-detail-page-for-temu-semi-managed-sellers.html"
+    "https://www.pod.ddddnet.cn/blog/posts/optimizing-product-detail-page-for-temu-semi-managed-sellers.html",
+    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-seller-factory-direct-distribution-store-promotion-sign-up-strategy.html"
   ],
   "results": {
     "indexnow": {
       "success": true,
       "status": 200,
       "endpoint": "https://api.indexnow.org/indexnow",
-      "urlCount": 3
+      "urlCount": 4
     },
     "bing": {
       "success": false,
@@ -19,9 +20,9 @@
       "error": ""
     },
     "baidu": {
-      "success": true,
-      "pushed": 2,
-      "remaining": 8,
+      "success": false,
+      "skipped": true,
+      "reason": "24h 降频跳过",
       "lastPushedAt": "2026-09-02T09:17:01.485Z"
     }
   }

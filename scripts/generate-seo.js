@@ -659,7 +659,7 @@ footer a{color:var(--text3)}
 </div>
 
 <footer>
-  <p>© 2025 ${CONFIG.siteName}. <a href="${CONFIG.siteUrl}">www.pod.ddddnet.cn</a></p>
+  <p>© 2025-2026 ${CONFIG.siteName}. <a href="${CONFIG.siteUrl}">www.pod.ddddnet.cn</a></p>
 </footer>
 
 </body>

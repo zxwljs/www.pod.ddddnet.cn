@@ -1,18 +1,19 @@
 {
-  "updatedAt": "2026-09-02T12:26:42.533Z",
-  "urlCount": 4,
+  "updatedAt": "2026-09-02T16:56:47.327Z",
+  "urlCount": 5,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
     "https://www.pod.ddddnet.cn/blog/posts/optimizing-product-detail-page-for-temu-semi-managed-sellers.html",
-    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-seller-factory-direct-distribution-store-promotion-sign-up-strategy.html"
+    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-seller-factory-direct-distribution-store-promotion-sign-up-strategy.html",
+    "https://www.pod.ddddnet.cn/blog/posts/no-capital-pod-side-business.html"
   ],
   "results": {
     "indexnow": {
       "success": true,
       "status": 200,
       "endpoint": "https://api.indexnow.org/indexnow",
-      "urlCount": 4
+      "urlCount": 5
     },
     "bing": {
       "success": false,

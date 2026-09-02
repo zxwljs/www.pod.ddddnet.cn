@@ -560,7 +560,7 @@ function generateArticleHTML(article, topic) {
 <meta name="twitter:title" content="${escapeAttr(article.title)}" />
 <meta name="twitter:description" content="${escapeAttr(article.description)}" />
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb'/%3E%3Cstop offset='100%25' style='stop-color:%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-size='52' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'%3E轩%3C/text%3E%3C/svg%3E" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb'/%3E%3Cstop offset='100%25' style='stop-color:%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Cpath d='M20 78 V44 H34 V56 H48 V44 H62 V56 H76 V34 L86 42 V78 Z' fill='white'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
@@ -627,7 +627,7 @@ footer a{color:var(--text3)}
 <nav class="nav">
   <div class="nav-in">
     <div class="logo" onclick="window.location.href='${CONFIG.siteUrl}'">
-      <div class="logo-ic">轩</div>
+      <div class="logo-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M22 22H2V10l7-3v2l5-2v3h3v-3.5l5 2V22z"/></svg></div>
       <span class="logo-t">${CONFIG.siteName}</span>
     </div>
     <a href="${CONFIG.siteUrl}/blog/" class="nav-back">← 返回博客</a>
@@ -720,7 +720,7 @@ ${page > 1 ? `<meta name="robots" content="noindex, follow" />` : ''}
 <meta property="og:type" content="website" />
 <meta property="og:title" content="轩宇汇 POD 货盘卖货博客 | ${CONFIG.siteName}" />
 <meta property="og:description" content="轩宇汇美国源头 POD 工厂：服装、水杯等 POD 货盘一件代发，零库存、无资金压力，帮你把货卖向全球。" />
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb'/%3E%3Cstop offset='100%25' style='stop-color:%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-size='52' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'%3E轩%3C/text%3E%3C/svg%3E" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb'/%3E%3Cstop offset='100%25' style='stop-color:%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Cpath d='M20 78 V44 H34 V56 H48 V44 H62 V56 H76 V34 L86 42 V78 Z' fill='white'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 <style>
@@ -763,7 +763,7 @@ footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color
 <nav class="nav">
   <div class="nav-in">
     <div class="logo" onclick="window.location.href='${CONFIG.siteUrl}'">
-      <div class="logo-ic">轩</div>
+      <div class="logo-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M22 22H2V10l7-3v2l5-2v3h3v-3.5l5 2V22z"/></svg></div>
       <span class="logo-t">${CONFIG.siteName}</span>
     </div>
     <a href="${CONFIG.siteUrl}" style="font-size:14px;color:var(--text2);font-weight:500">← 返回首页</a>

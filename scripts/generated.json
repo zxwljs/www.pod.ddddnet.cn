@@ -1,6 +1,21 @@
 {
-  "usedTopics": [],
+  "usedTopics": [
+    "Temu半托管物流回传怎么设置"
+  ],
   "titles": [],
-  "posts": [],
-  "count": 0
+  "posts": [
+    {
+      "slug": "temu-logistics-return-setting",
+      "title": "Temu半托管物流回传怎么设置？卖家必看！",
+      "description": "本文详细讲解了Temu半托管模式下如何设置物流回传，包括操作流程、注意事项和常见问题解答，帮助您高效管理物流，提升用户体验。",
+      "category": "Temu半托管代发",
+      "date": "2026-09-02",
+      "keywords": [
+        "Temu物流回传",
+        "运单号",
+        "半托管"
+      ]
+    }
+  ],
+  "count": 1
 }

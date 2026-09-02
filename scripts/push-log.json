@@ -1,1 +1,27 @@
-{}
+{
+  "updatedAt": "2026-09-02T07:59:55.333Z",
+  "urlCount": 3,
+  "urls": [
+    "https://www.pod.ddddnet.cn/blog/",
+    "https://www.pod.ddddnet.cn/sitemap.xml",
+    "https://www.pod.ddddnet.cn/blog/posts/temu-logistics-return-setting.html"
+  ],
+  "results": {
+    "indexnow": {
+      "success": true,
+      "status": 200,
+      "endpoint": "https://api.indexnow.org/indexnow",
+      "urlCount": 3
+    },
+    "bing": {
+      "success": false,
+      "skipped": true,
+      "reason": "未配置 BING_API_KEY"
+    },
+    "baidu": {
+      "success": false,
+      "skipped": true,
+      "reason": "未配置 BAIDU_TOKEN"
+    }
+  }
+}

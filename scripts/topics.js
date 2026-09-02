@@ -1,4 +1,5 @@
-// SEO 选题库 - 围绕轩宇汇（Temu 半托管 POD 一件代发分销中台）的长尾词矩阵
+// SEO 选题库 - 围绕轩宇汇（Temu 半托管 POD 一件代发货盘平台）的长尾词矩阵
+// 核心叙事：用轩宇汇现成 POD 货盘（服装/T恤、水杯/马克杯等），零库存、一件代发、无资金压力，把货卖向全球
 // 每次生成时随机选取一个未使用的选题，调用 AI 生成原创文章
 module.exports = {
   // 站点基础信息（生成文章内链、CTA 时使用）
@@ -6,10 +7,26 @@ module.exports = {
     name: '轩宇汇',
     url: 'https://www.pod.ddddnet.cn',
     appUrl: 'https://pod.ddddnet.cn',
-    desc: 'Temu半托管POD一件代发分销中台',
+    desc: 'Temu半托管POD一件代发货盘平台',
   },
   // 选题列表：topic=主题方向, keywords=SEO关键词, category=分类
   topics: [
+    // ===== POD 货盘卖货（主推叙事：服装/水杯、零库存、一件代发、全球卖货）=====
+    { topic: 'POD服装一件代发怎么卖货', keywords: ['POD服装', '一件代发', 'T恤卖货'], category: 'POD货盘卖货' },
+    { topic: 'POD马克杯水杯怎么做跨境卖货', keywords: ['POD水杯', '马克杯', '跨境卖货'], category: 'POD货盘卖货' },
+    { topic: '零库存做POD把货卖全球真的能赚吗', keywords: ['零库存', 'POD卖全球', '赚差价'], category: 'POD货盘卖货' },
+    { topic: '无资金压力起步POD副业卖货', keywords: ['无资金压力', 'POD副业', '轻创业'], category: 'POD货盘卖货' },
+    { topic: '用轩宇汇货盘开店卖货全流程', keywords: ['轩宇汇货盘', '开店卖货', 'POD'], category: 'POD货盘卖货' },
+    { topic: 'POD货盘选品：服装还是水杯', keywords: ['POD货盘', '服装选品', '水杯选品'], category: 'POD货盘卖货' },
+    { topic: 'Temu半托管上架POD货品卖货', keywords: ['Temu半托管', 'POD上架', '货品卖货'], category: 'POD货盘卖货' },
+    { topic: 'POD一件代发和传统备货哪个风险小', keywords: ['一件代发', '传统备货', '库存风险'], category: 'POD货盘卖货' },
+    { topic: '新手做POD服装从0到出单', keywords: ['新手POD', '服装出单', 'T恤'], category: 'POD货盘卖货' },
+    { topic: 'POD水杯马克杯爆款怎么找', keywords: ['POD水杯', '爆款', '马克杯'], category: 'POD货盘卖货' },
+    { topic: '全球卖货POD物流怎么解决', keywords: ['全球卖货', 'POD物流', '代发'], category: 'POD货盘卖货' },
+    { topic: 'POD图案设计怎么帮卖货', keywords: ['POD设计', '卖货', '图案'], category: 'POD货盘卖货' },
+    { topic: 'POD零成本测款上架卖货', keywords: ['POD测款', '零成本', '上架'], category: 'POD货盘卖货' },
+    { topic: '2026用现成货盘做POD还有机会吗', keywords: ['2026', 'POD货盘', '机会'], category: 'POD货盘卖货' },
+
     // ===== Temu 半托管代发 =====
     { topic: 'Temu半托管一件代发完整流程教程', keywords: ['Temu半托管', '一件代发', '代发流程'], category: 'Temu半托管代发' },
     { topic: 'Temu半托管卖家如何零库存创业', keywords: ['Temu半托管', '零库存', '卖家创业'], category: 'Temu半托管代发' },

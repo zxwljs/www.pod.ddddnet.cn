@@ -104,7 +104,7 @@ async function generateHotTopics() {
 - Temu 半托管最新政策变化与平台动态
 - Temu 半托管运营技巧与上品效率提升
 - Temu 半托管选品、定价、促销策略
-- 跨境电商 AI 工具与实用工具（套图、侵权查询、AI标题等）
+- 轩宇汇美国源头 POD 工厂货盘与一件代发卖货（服装/T恤、水杯/马克杯、帆布包、手机壳等）
 - 当前季节热点在 Temu 上的运营机会（${season}）
 
 选题要求：
@@ -237,11 +237,12 @@ SEO关键词：${topic.keywords.join('、')}
 - 开头直接切入痛点，禁止「大家好」「随着跨境电商发展」「在当今...背景下」「近年来」「如今」类套话开头
 - 主体必须有具体实操步骤或真实案例（数字、流程、坑点），不要泛泛而谈
 - 文章分 4-6 个 h2 章节，每节有实质内容
+- 至少自然带出 POD 的核心卖点：零库存、一件代发、无资金压力、可卖向全球；可结合服装/T恤、水杯/马克杯等具体品类举例，让想卖货的读者一眼看到机会
 - 不要emoji、不要「点赞转发」类社交用语，正文内不要出现 [XXX] 这种方括号标记
 
-轩宇汇（pod.ddddnet.cn）是你日常用的 Temu 半托管 POD 一件代发分销中台，功能：白标绑店（自动拉取店铺订单）、工厂选品中心、一键推单工厂代发、订单审核流、物流状态回传、多区域覆盖（125/225/325/525）。
+轩宇汇（pod.ddddnet.cn）是 Temu 半托管卖家的美国源头 POD 工厂：自有工厂直供可卖的 POD 货品——服装（T恤/卫衣/帽子）、水杯马克杯、帆布包、手机壳等。卖家零库存、无资金压力，顾客在 Temu 下单后，轩宇汇美国工厂直接印刷代发、物流回传，你只赚货品价差，把货卖向全球。
 
-全文提及「轩宇汇」或「pod.ddddnet.cn」2-3次，像推荐分销平台一样自然，不要整段介绍产品。逻辑是「先讲痛点→顺带说轩宇汇怎么解决」。文末自然引导访问 pod.ddddnet.cn。${angleHint}
+全文提及「轩宇汇」或「pod.ddddnet.cn」2-3次，像推荐美国源头 POD 工厂/货盘一样自然，不要整段介绍工厂。核心叙事：用轩宇汇美国工厂的现成 POD 货盘（服装/T恤、水杯/马克杯等），零库存、一件代发、无资金压力，就能把货卖向全球；先讲 POD 服装/水杯「零库存卖货、无资金压力、全球出货、卖不动就下架零滞销」的机会与痛点，再顺带说轩宇汇美国工厂直供货盘、帮你把货卖出去。文末自然引导：去 pod.ddddnet.cn 用轩宇汇美国工厂的货盘开店卖货。${angleHint}
 
 严格按以下格式输出，不要其他内容。注意：[TITLE]、[CONTENT] 等方括号标签是结构分隔符，必须严格保留；但正文（[CONTENT] 和 [/CONTENT] 之间的内容）里不要出现方括号标记。
 
@@ -559,7 +560,7 @@ function generateArticleHTML(article, topic) {
 <meta name="twitter:title" content="${escapeAttr(article.title)}" />
 <meta name="twitter:description" content="${escapeAttr(article.description)}" />
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb'/%3E%3Cstop offset='100%25' style='stop-color:%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-size='52' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'%3E叮%3C/text%3E%3C/svg%3E" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb'/%3E%3Cstop offset='100%25' style='stop-color:%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-size='52' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'%3E轩%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
@@ -626,7 +627,7 @@ footer a{color:var(--text3)}
 <nav class="nav">
   <div class="nav-in">
     <div class="logo" onclick="window.location.href='${CONFIG.siteUrl}'">
-      <div class="logo-ic">叮</div>
+      <div class="logo-ic">轩</div>
       <span class="logo-t">${CONFIG.siteName}</span>
     </div>
     <a href="${CONFIG.siteUrl}/blog/" class="nav-back">← 返回博客</a>
@@ -651,8 +652,8 @@ footer a{color:var(--text3)}
   </article>
 
   <div class="cta-box">
-    <h3>提升你的 Temu 上品效率</h3>
-    <p>批量套图、侵权查询、AI标题生成，一站搞定。立即体验 ${CONFIG.siteName}。</p>
+    <h3>用轩宇汇的货盘，零库存把货卖向全球</h3>
+    <p>服装、水杯等 POD 货品一件代发，无资金压力、无库存风险。立即去 ${CONFIG.siteName} 用现成货盘开店卖货。</p>
     <a href="${CONFIG.appUrl}" class="cta-btn">进入应用 →</a>
   </div>
 </div>
@@ -717,9 +718,9 @@ function generateBlogIndex(posts) {
 ${page === 1 ? `<link rel="canonical" href="${CONFIG.siteUrl}/blog/" />` : `<link rel="canonical" href="${CONFIG.siteUrl}/blog/page/${page}.html" />`}
 ${page > 1 ? `<meta name="robots" content="noindex, follow" />` : ''}
 <meta property="og:type" content="website" />
-<meta property="og:title" content="跨境电商运营博客 | ${CONFIG.siteName}" />
+<meta property="og:title" content="轩宇汇 POD 货盘卖货博客 | ${CONFIG.siteName}" />
 <meta property="og:description" content="Temu半托管运营、POD套图技巧、侵权规避、AI工具应用等跨境电商干货文章。" />
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb'/%3E%3Cstop offset='100%25' style='stop-color:%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-size='52' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'%3E叮%3C/text%3E%3C/svg%3E" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb'/%3E%3Cstop offset='100%25' style='stop-color:%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-size='52' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'%3E轩%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 <style>
@@ -762,7 +763,7 @@ footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;color
 <nav class="nav">
   <div class="nav-in">
     <div class="logo" onclick="window.location.href='${CONFIG.siteUrl}'">
-      <div class="logo-ic">叮</div>
+      <div class="logo-ic">轩</div>
       <span class="logo-t">${CONFIG.siteName}</span>
     </div>
     <a href="${CONFIG.siteUrl}" style="font-size:14px;color:var(--text2);font-weight:500">← 返回首页</a>

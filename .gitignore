@@ -1,0 +1,29 @@
+# ===== 依赖 =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# ===== 系统 / 编辑器 =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== 密钥 / 凭证 =====
+.env
+.env.local
+.env.production
+
+# ===== 本地临时 =====
+.tmp/
+tmp/
+.cache/
+
+# 注意：以下运行时数据文件【必须入库】（GitHub Actions 跨 run 持久化 + Cloudflare Pages 部署访问）：
+# - scripts/generated.json      已生成文章记录（去重必需）
+# - scripts/topics-hot.json     动态热点选题（7 天更新一次）
+# - scripts/push-log.json       推送日志（用户在线查看 https://www.ddddnet.cn/scripts/push-log.json）

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>轩宇汇 - Temu半托管 POD 一件代发分销中台</title>
+<meta name="description" content="轩宇汇是面向 TEMU 半托管散户卖家的 POD 一件代发分销中台。工厂直供、零库存创业，自动拉单、推单、履约，你只管选品与运营，赚取货品价差。" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%231e3a8a'/%3E%3Cstop offset='100%25' style='stop-color:%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-size='52' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'%3E轩%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#fbfcfd;--bg2:#f4f7fb;--surface:#ffffff;--surface2:#f8fafc;
+  --border:#eef2f7;--border2:#e2e8f0;--border3:#cbd5e1;
+  --text:#0b1426;--text2:#475569;--text3:#94a3b8;--text4:#64748b;
+  --p1:#1d4ed8;--p2:#0ea5e9;--p3:#2563eb;--a1:#0891b2;--a2:#22d3ee;
+  --g1:linear-gradient(135deg,#1e3a8a,#0ea5e9);--g1s:linear-gradient(135deg,rgba(30,58,138,.06),rgba(14,165,233,.06));
+  --g2:linear-gradient(135deg,#0891b2,#1e3a8a);
+  --sh1:0 1px 2px rgba(15,23,42,.04),0 1px 3px rgba(15,23,42,.03);
+  --sh2:0 4px 12px rgba(15,23,42,.04),0 2px 6px rgba(15,23,42,.03);
+  --sh3:0 12px 32px rgba(15,23,42,.06),0 4px 12px rgba(15,23,42,.04);
+  --sh4:0 24px 60px rgba(15,23,42,.08),0 8px 24px rgba(15,23,42,.05);
+  --r1:24px;--r2:18px;--r3:14px;--r4:10px;--r5:8px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans SC','Plus Jakarta Sans',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;font-feature-settings:"cv02","cv03","cv04","cv11"}
+::selection{background:rgba(30,58,138,.15);color:var(--p1)}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .3s}
+.nav.scrolled{backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(255,255,255,.8);border-bottom:1px solid var(--border);box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.nav-in{max-width:1200px;margin:0 auto;padding:0 28px;height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:11px;cursor:pointer;font-size:18px;font-weight:800;letter-spacing:-.02em}
+.logo-ic{width:34px;height:34px;border-radius:9px;background:var(--g1);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:16px;box-shadow:0 3px 10px rgba(30,58,138,.3),inset 0 1px 0 rgba(255,255,255,.3)}
+.logo-t{background:var(--g1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-l{display:flex;gap:32px;list-style:none}
+.nav-l a{color:var(--text2);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s;position:relative}
+.nav-l a:hover{color:var(--p1)}
+.nav-l a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--g1);border-radius:2px;transition:width .3s}
+.nav-l a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:9px 18px;border-radius:var(--r5);font-size:13.5px;font-weight:600;text-decoration:none;cursor:pointer;border:none;transition:all .25s;font-family:inherit;white-space:nowrap}
+.btn-p{background:var(--g1);color:#fff;box-shadow:0 3px 10px rgba(30,58,138,.3),inset 0 1px 0 rgba(255,255,255,.2)}
+.btn-p:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(30,58,138,.4),inset 0 1px 0 rgba(255,255,255,.2)}
+.btn-g{background:var(--surface);color:var(--text);border:1px solid var(--border2)}
+.btn-g:hover{border-color:var(--p1);color:var(--p1);background:var(--surface2)}
+.btn-lg{padding:13px 28px;font-size:15px;border-radius:var(--r4)}
+.mbtn{display:none;background:none;border:none;color:var(--text);cursor:pointer;padding:6px}
+.mmenu{display:none;position:fixed;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);padding:12px 20px;z-index:99;box-shadow:var(--sh2)}
+.mmenu.open{display:block}
+.mmenu a{display:block;padding:13px 14px;color:var(--text2);text-decoration:none;font-size:14.5px;border-radius:var(--r5);transition:all .2s;font-weight:500}
+.mmenu a:hover{background:var(--surface2);color:var(--text)}
+
+/* Layout */
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+section{padding:110px 0;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:7px;padding:5px 14px;background:var(--g1s);border:1px solid rgba(30,58,138,.12);border-radius:999px;font-size:12.5px;font-weight:600;color:var(--p1);margin-bottom:18px;letter-spacing:.01em}
+.eyebrow svg{width:13px;height:13px}
+.h2{font-size:40px;font-weight:800;line-height:1.18;letter-spacing:-.025em;margin-bottom:14px}
+.h2 .g{background:var(--g1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sub{font-size:17px;color:var(--text2);max-width:580px;line-height:1.7}
+.sh{text-align:center;margin-bottom:56px}
+.sh .sub{margin:0 auto}
+.sec-div{width:48px;height:3px;background:var(--g1);border-radius:3px;margin:0 auto 20px}
+
+/* Hero */
+.hero{padding:130px 0 90px;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-bg::before{content:'';position:absolute;top:-100px;left:50%;width:1100px;height:700px;background:radial-gradient(ellipse at center,rgba(30,58,138,.07) 0%,transparent 65%);transform:translateX(-50%)}
+.hero-bg::after{content:'';position:absolute;top:200px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(8,145,178,.06) 0%,transparent 70%);border-radius:50%}
+.hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:9px;padding:6px 14px 6px 8px;background:#fff;border:1px solid var(--border2);border-radius:999px;font-size:13px;font-weight:600;margin-bottom:26px;box-shadow:var(--sh1);color:var(--text)}
+.hero-badge .d{width:18px;height:18px;border-radius:50%;background:var(--g1);display:flex;align-items:center;justify-content:center}
+.hero-badge .d::after{content:'';width:6px;height:6px;border-radius:50%;background:#fff}
+.hero-badge .live{font-size:11px;color:var(--p1);font-weight:700;letter-spacing:.05em}
+.hero h1{font-size:56px;font-weight:900;line-height:1.08;letter-spacing:-.035em;margin-bottom:22px}
+.hero h1 .g{background:linear-gradient(120deg,#1e3a8a 0%,#0ea5e9 40%,#0891b2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero h1 .hl{position:relative;display:inline-block}
+.hero h1 .hl::after{content:'';position:absolute;bottom:2px;left:-2px;right:-2px;height:10px;background:linear-gradient(90deg,rgba(30,58,138,.12),rgba(14,165,233,.12));z-index:-1;border-radius:4px}
+.hero-desc{font-size:18px;color:var(--text2);line-height:1.75;margin-bottom:32px;max-width:540px}
+.hero-cta{display:flex;gap:12px;margin-bottom:44px;flex-wrap:wrap}
+.hero-stats{display:flex;gap:36px;flex-wrap:wrap}
+.stat{display:flex;flex-direction:column;gap:3px}
+.stat-n{font-size:28px;font-weight:800;letter-spacing:-.02em;background:var(--g1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-l{font-size:12.5px;color:var(--text3);font-weight:500}
+
+/* Hero visual */
+.hv{position:relative}
+.hv-card{background:#fff;border:1px solid var(--border2);border-radius:var(--r1);box-shadow:var(--sh4);overflow:hidden;position:relative}
+.hv-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--g1)}
+.hv-top{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--border)}
+.hv-dots{display:flex;gap:6px}
+.hv-dots span{width:10px;height:10px;border-radius:50%}
+.hv-dots span:nth-child(1){background:#ff5f57}
+.hv-dots span:nth-child(2){background:#ffbd2e}
+.hv-dots span:nth-child(3){background:#28c940}
+.hv-title{font-size:12px;color:var(--text3);font-weight:600;display:flex;align-items:center;gap:6px}
+.hv-title .pulse{width:7px;height:7px;border-radius:50%;background:#10b981;box-shadow:0 0 8px rgba(16,185,129,.6);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hv-body{padding:18px}
+.hv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.hv-item{aspect-ratio:1;border-radius:var(--r4);background:linear-gradient(135deg,#f8fafc,#f1f5f9);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;position:relative;transition:all .3s;overflow:hidden}
+.hv-item:hover{border-color:var(--p2);transform:scale(1.03)}
+.hv-item.done{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-color:#bfdbfe}
+.hv-item.done::after{content:'✓';position:absolute;top:4px;right:6px;font-size:10px;color:var(--p1);font-weight:800}
+.hv-item svg{width:36%;height:36%;color:var(--text3);opacity:.6}
+.hv-item.done svg{color:var(--p1);opacity:.8}
+.hv-prog{padding-top:14px;border-top:1px solid var(--border)}
+.hv-prog-top{display:flex;justify-content:space-between;font-size:12px;margin-bottom:7px;font-weight:600}
+.hv-prog-top span:first-child{color:var(--text2)}
+.hv-prog-top span:last-child{color:var(--p1)}
+.hv-bar{height:6px;background:var(--border2);border-radius:999px;overflow:hidden;position:relative}
+.hv-fill{height:100%;width:72%;background:var(--g1);border-radius:999px;position:relative;overflow:hidden}
+.hv-fill::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);animation:shine 2s infinite}
+@keyframes shine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+.hv-float{position:absolute;background:#fff;border:1px solid var(--border2);border-radius:var(--r3);padding:11px 15px;box-shadow:var(--sh3);display:flex;align-items:center;gap:10px;animation:floaty 4s ease-in-out infinite}
+.hv-f1{top:-16px;right:-14px}
+.hv-f2{bottom:60px;left:-20px;animation-delay:-2s}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.hv-fi{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hv-fi.g{background:#dcfce7;color:#16a34a}
+.hv-fi.b{background:#dbeafe;color:#1d4ed8}
+.hv-ft strong{display:block;font-size:13px;font-weight:700;line-height:1.3}
+.hv-ft span{font-size:11px;color:var(--text3)}
+
+/* Platforms strip */
+.strip{padding:36px 0;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.strip-in{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.strip-l{font-size:13px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.strip-tag{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:var(--g1s);border:1px solid rgba(30,58,138,.12);border-radius:999px;font-size:15px;font-weight:700;color:var(--p1)}
+.strip-tag .b{font-size:11px;padding:2px 8px;background:var(--g1);color:#fff;border-radius:999px;font-weight:600}
+
+/* Features */
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feat{background:var(--surface);border:1px solid var(--border2);border-radius:var(--r2);padding:30px 28px;transition:all .35s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden}
+.feat::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--g1);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.feat:hover{transform:translateY(-4px);border-color:rgba(30,58,138,.2);box-shadow:var(--sh3)}
+.feat:hover::before{transform:scaleX(1)}
+.feat-ic{width:50px;height:50px;border-radius:var(--r3);background:var(--g1s);border:1px solid rgba(30,58,138,.1);display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--p1)}
+.feat-ic svg{width:24px;height:24px}
+.feat h3{font-size:18px;font-weight:700;margin-bottom:10px;letter-spacing:-.01em}
+.feat p{color:var(--text2);font-size:14.5px;line-height:1.65}
+
+/* Advantage */
+.adv-sec{background:linear-gradient(180deg,transparent,var(--bg2),transparent)}
+.adv-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.adv-list{display:flex;flex-direction:column;gap:14px}
+.adv-it{display:flex;gap:18px;padding:22px 24px;background:var(--surface);border:1px solid var(--border2);border-radius:var(--r2);transition:all .3s;position:relative;overflow:hidden}
+.adv-it:hover{border-color:rgba(30,58,138,.2);box-shadow:var(--sh2);transform:translateX(4px)}
+.adv-n{width:40px;height:40px;flex-shrink:0;border-radius:11px;background:var(--g1);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#fff;box-shadow:0 3px 10px rgba(30,58,138,.3)}
+.adv-it h4{font-size:17px;font-weight:700;margin-bottom:5px}
+.adv-it p{color:var(--text2);font-size:14px;line-height:1.65}
+.adv-vis{position:relative;height:460px}
+.adv-card{position:absolute;background:#fff;border:1px solid var(--border2);border-radius:var(--r2);padding:20px;box-shadow:var(--sh3);width:68%}
+.adv-c1{top:20px;left:0;animation:floaty 5s ease-in-out infinite}
+.adv-c2{top:170px;right:0;width:64%;animation:floaty 5s ease-in-out infinite -1.5s}
+.adv-c3{bottom:10px;left:8%;width:60%;animation:floaty 5s ease-in-out infinite -3s}
+.adv-ch{display:flex;align-items:center;gap:10px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.adv-ci{width:32px;height:32px;border-radius:9px;display:flex;align-items:center;justify-content:center}
+.adv-ch strong{font-size:13px;font-weight:700}
+.adv-cb{display:flex;flex-direction:column;gap:7px}
+.adv-cr{display:flex;justify-content:space-between;font-size:12.5px}
+.adv-cr span:first-child{color:var(--text3)}
+.adv-cr span:last-child{font-weight:600;color:var(--text2)}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.steps::before{content:'';position:absolute;top:36px;left:12%;right:12%;height:2px;background:linear-gradient(90deg,var(--p1),var(--a1));opacity:.18;z-index:0}
+.step{text-align:center;position:relative;z-index:1}
+.step-n{width:72px;height:72px;margin:0 auto 20px;border-radius:50%;background:#fff;border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;color:var(--p1);transition:all .35s;position:relative}
+.step-n::before{content:'';position:absolute;inset:-4px;border-radius:50%;background:var(--g1);opacity:0;transition:opacity .35s;z-index:-1}
+.step:hover .step-n{background:var(--g1);color:#fff;border-color:transparent;transform:scale(1.08);box-shadow:0 8px 24px rgba(30,58,138,.35)}
+.step h4{font-size:17px;font-weight:700;margin-bottom:7px}
+.step p{color:var(--text2);font-size:14px;line-height:1.65;padding:0 8px}
+
+/* CTA */
+.cta-sec{position:relative;overflow:hidden}
+.cta-card{position:relative;background:linear-gradient(135deg,#eff6ff 0%,#ecfeff 50%,#f0f9ff 100%);border:1px solid #bfdbfe;border-radius:var(--r1);padding:72px 56px;text-align:center;overflow:hidden}
+.cta-card::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231e3a8a' fill-opacity='0.035'%3E%3Cpath d='M40 40c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20zm-40 0c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20S0 51.046 0 40z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+.cta-card h2{font-size:40px;font-weight:800;letter-spacing:-.025em;margin-bottom:14px;position:relative}
+.cta-card h2 .g{background:linear-gradient(135deg,#1e3a8a,#0891b2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.cta-card p{font-size:17px;color:var(--text2);max-width:540px;margin:0 auto 32px;line-height:1.7;position:relative}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+.cta-note{margin-top:18px;font-size:12.5px;color:var(--text3);position:relative}
+
+/* FAQ */
+.faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.faq{background:var(--surface);border:1px solid var(--border2);border-radius:var(--r3);overflow:hidden;transition:all .3s}
+.faq:hover{border-color:var(--border3)}
+.faq.active{border-color:rgba(30,58,138,.25);box-shadow:var(--sh2)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 24px;background:none;border:none;color:var(--text);font-size:15.5px;font-weight:600;cursor:pointer;text-align:left;font-family:inherit;gap:16px;transition:color .2s}
+.faq-q:hover{color:var(--p1)}
+.faq-q svg{flex-shrink:0;transition:transform .35s;color:var(--p1)}
+.faq.active .faq-q svg{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease;padding:0 24px}
+.faq.active .faq-a{max-height:500px;padding:0 24px 20px}
+.faq-a p{color:var(--text2);font-size:14.5px;line-height:1.75}
+
+/* Footer */
+footer{border-top:1px solid var(--border);padding:56px 0 36px;background:var(--bg2)}
+.foot-in{max-width:1200px;margin:0 auto;padding:0 28px;text-align:center}
+.foot-brand{display:flex;flex-direction:column;align-items:center;gap:14px}
+.foot-brand p{color:var(--text2);font-size:14.5px;line-height:1.75;max-width:480px}
+.foot-copy{margin-top:8px;padding-top:22px;border-top:1px solid var(--border);width:100%;font-size:12.5px;color:var(--text3)}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.show{opacity:1;transform:translateY(0)}
+
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .hv{max-width:480px;margin:0 auto;width:100%}
+  .feat-grid{grid-template-columns:repeat(2,1fr)}
+  .adv-grid{grid-template-columns:1fr;gap:56px}
+  .adv-vis{height:380px}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .steps::before{display:none}
+}
+@media(max-width:768px){
+  .nav-in{padding:0 18px;height:62px}
+  .nav-l{display:none}
+  .mbtn{display:block}
+  .wrap{padding:0 18px}
+  section{padding:80px 0}
+  .hero{padding:100px 0 70px}
+  .hero h1{font-size:36px}
+  .hero-desc{font-size:16px}
+  .hero-stats{gap:24px}
+  .stat-n{font-size:22px}
+  .h2{font-size:30px}
+  .sub{font-size:15.5px}
+  .feat-grid{grid-template-columns:1fr}
+  .feat{padding:26px 22px}
+  .steps{grid-template-columns:1fr;gap:28px}
+  .cta-card{padding:48px 22px}
+  .cta-card h2{font-size:28px}
+  .cta-card p{font-size:15.5px}
+  .hv-f1{right:0;top:-12px}
+  .hv-f2{left:0}
+  .adv-vis{height:auto}
+  .adv-card{position:relative;width:100%;margin-bottom:14px;animation:none}
+  .adv-c1,.adv-c2,.adv-c3{top:auto;right:auto;left:auto;bottom:auto}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-in">
+    <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <div class="logo-ic">轩</div>
+      <span class="logo-t">轩宇汇</span>
+    </div>
+    <ul class="nav-l">
+      <li><a href="#features">核心功能</a></li>
+      <li><a href="#advantages">平台优势</a></li>
+      <li><a href="#steps">使用流程</a></li>
+      <li><a href="#faq">常见问题</a></li>
+      <li><a href="/blog/">博客</a></li>
+    </ul>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a href="https://pod.ddddnet.cn" target="_blank" class="btn btn-p">
+        进入平台
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <button class="mbtn" onclick="toggleM()" aria-label="菜单">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mmenu" id="mmenu">
+  <a href="#features" onclick="toggleM()">核心功能</a>
+  <a href="#advantages" onclick="toggleM()">平台优势</a>
+  <a href="#steps" onclick="toggleM()">使用流程</a>
+  <a href="#faq" onclick="toggleM()">常见问题</a>
+  <a href="/blog/" onclick="toggleM()">博客</a>
+  <a href="https://pod.ddddnet.cn" target="_blank" onclick="toggleM()">进入平台</a>
+</div>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="rv">
+        <div class="hero-badge">
+          <span class="d"></span>
+          <span class="live">NEW</span>
+          <span>专为 TEMU 半托管散户卖家打造</span>
+        </div>
+        <h1>
+          工厂直供 · 一键代发<br/>
+          <span class="hl"><span class="g">零库存创业</span></span>
+        </h1>
+        <p class="hero-desc">
+          轩宇汇是面向 TEMU 半托管散户卖家的 POD 一件代发分销中台。连接 POD 工厂，自动拉单、推单、履约，你只需专注选品与运营，赚取货品价差。
+        </p>
+        <div class="hero-cta">
+          <a href="https://pod.ddddnet.cn" target="_blank" class="btn btn-p btn-lg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            进入平台
+          </a>
+          <a href="#features" class="btn btn-g btn-lg">了解功能</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-n">0 元</span><span class="stat-l">备货成本</span></div>
+          <div class="stat"><span class="stat-n">1 件</span><span class="stat-l">起代发</span></div>
+          <div class="stat"><span class="stat-n">4 区</span><span class="stat-l">TEMU 覆盖</span></div>
+        </div>
+      </div>
+      <div class="hv rv">
+        <div class="hv-card">
+          <div class="hv-top">
+            <div class="hv-dots"><span></span><span></span><span></span></div>
+            <div class="hv-title"><span class="pulse"></span>订单履约任务 · 进行中</div>
+          </div>
+          <div class="hv-body">
+            <div class="hv-grid">
+              <div class="hv-item done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <div class="hv-item done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              <div class="hv-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+              <div class="hv-item done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+              <div class="hv-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+              <div class="hv-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/><path d="M12 5v14"/></svg></div>
+              <div class="hv-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              <div class="hv-item done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+              <div class="hv-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            </div>
+            <div class="hv-prog">
+              <div class="hv-prog-top"><span>正在处理第 108 单 / 共 150 单</span><span>72%</span></div>
+              <div class="hv-bar"><div class="hv-fill"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="hv-float hv-f1">
+          <div class="hv-fi g"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="hv-ft"><strong>订单已拉取</strong><span>自动同步</span></div>
+        </div>
+        <div class="hv-float hv-f2">
+          <div class="hv-fi b"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+          <div class="hv-ft"><strong>工厂代发</strong><span>自动推单</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <div class="strip-in">
+      <span class="strip-l">当前支持</span>
+      <span class="strip-tag">Temu<span class="b">半托管</span></span>
+      <span style="font-size:13px;color:var(--text3);font-weight:500">中国区 / 美区 / 欧区 / 全球</span>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="sec-div"></div>
+      <div class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>核心功能</div>
+      <h2 class="h2">专为<span class="g">Temu半托管散户</span>打造<br/>覆盖代发全流程</h2>
+      <p class="sub">从白标绑店、选品中心到订单拉取、推单工厂、物流回传，轩宇汇帮你把一件代发的每一环都跑通。</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat rv">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3>白标绑店 · 自动拉单</h3>
+        <p>散户用自有 TEMU 店铺 Token 一键绑定，系统自动拉取新订单。方果对散户完全隐身，顾客眼里只有轩宇汇。</p>
+      </div>
+      <div class="feat rv">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 11a4 4 0 1 0-8 0"/><path d="M3 21v-2a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2"/></svg></div>
+        <h3>一件代发 · 推单工厂</h3>
+        <p>绑定工厂商品 SKU 后付款推送，轩宇汇替你将订单推到 POD 工厂生产发货，你无需碰库存与物流。</p>
+      </div>
+      <div class="feat rv">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <h3>工厂选品中心</h3>
+        <p>浏览工厂在售 POD 商品的价格、库存与尺码表，工厂直供、零库存起步，出单后再绑定发货。</p>
+      </div>
+      <div class="feat rv">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>订单审核流</h3>
+        <p>付款推送即扣账户余额，管理员审核通过后自动推单。审核驳回自动原路退回，资金安全有保障。</p>
+      </div>
+      <div class="feat rv">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <h3>多区域覆盖</h3>
+        <p>支持 TEMU 中国区(125)/美区(225)/欧区(325)/全球(525)半托管店铺，一处后台管理多区域订单。</p>
+      </div>
+      <div class="feat rv">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+        <h3>物流状态回传</h3>
+        <p>工厂发货后物流单号自动回写 TEMU，订单状态全程可追踪，顾客与卖家同步可见。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="advantages" class="adv-sec">
+  <div class="wrap">
+    <div class="adv-grid">
+      <div class="adv-list rv">
+        <div class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>平台优势</div>
+        <h2 class="h2" style="margin-bottom:24px">为什么选择<span class="g">轩宇汇</span></h2>
+        <div class="adv-it">
+          <div class="adv-n">1</div>
+          <div><h4>零库存创业 · 轻资产</h4><p>无需备货、无需发货，工厂直供一件代发。你只投入时间与选品眼光，启动成本趋近于零。</p></div>
+        </div>
+        <div class="adv-it">
+          <div class="adv-n">2</div>
+          <div><h4>赚取货品价差</h4><p>平台对接 POD 工厂底价，你自主定价，差价即利润。定价权与利润都掌握在自己手里。</p></div>
+        </div>
+        <div class="adv-it">
+          <div class="adv-n">3</div>
+          <div><h4>白标隐身模式</h4><p>方果对散户完全隐身，绑店、拉单、推单都由轩宇汇代你发起。品牌归你，顾客只认轩宇汇。</p></div>
+        </div>
+        <div class="adv-it">
+          <div class="adv-n">4</div>
+          <div><h4>自动履约省心</h4><p>拉单、推单、生产、发货、回传全链路自动化，配合邮件提醒，你只需专注选品与店铺运营。</p></div>
+        </div>
+      </div>
+      <div class="adv-vis rv">
+        <div class="adv-card adv-c1">
+          <div class="adv-ch">
+            <div class="adv-ci" style="background:#dcfce7;color:#16a34a"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <strong>履约状态</strong>
+          </div>
+          <div class="adv-cb">
+            <div class="adv-cr"><span>已拉取订单</span><span>150 单</span></div>
+            <div class="adv-cr"><span>已推单工厂</span><span style="color:#16a34a">128 单</span></div>
+            <div class="adv-cr"><span>生产中</span><span style="color:#f59e0b">14 单</span></div>
+            <div class="adv-cr"><span>已发货</span><span>114 单</span></div>
+          </div>
+        </div>
+        <div class="adv-card adv-c2">
+          <div class="adv-ch">
+            <div class="adv-ci" style="background:#dbeafe;color:#1d4ed8"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+            <strong>代发效率</strong>
+          </div>
+          <div class="adv-cb">
+            <div class="adv-cr"><span>今日代发</span><span>2,840 件</span></div>
+            <div class="adv-cr"><span>平均时效</span><span>24-48h</span></div>
+            <div class="adv-cr"><span>区域覆盖</span><span>4 区</span></div>
+          </div>
+        </div>
+        <div class="adv-card adv-c3">
+          <div class="adv-ch">
+            <div class="adv-ci" style="background:#cffafe;color:#0891b2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+            <strong>资金安全</strong>
+          </div>
+          <div class="adv-cb">
+            <div class="adv-cr"><span>付款即扣款</span><span>支持</span></div>
+            <div class="adv-cr"><span>审核通过推单</span><span>自动</span></div>
+            <div class="adv-cr"><span>驳回退回</span><span style="color:#0891b2">原路返还</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="steps">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="sec-div"></div>
+      <div class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>使用流程</div>
+      <h2 class="h2">四步上手，<span class="g">即刻代发</span></h2>
+      <p class="sub">简单直观的操作流程，无需复杂学习，注册即用。</p>
+    </div>
+    <div class="steps">
+      <div class="step rv">
+        <div class="step-n">1</div>
+        <h4>注册登录</h4>
+        <p>访问 pod.ddddnet.cn 注册账号，邮箱密码登录即可开始。</p>
+      </div>
+      <div class="step rv">
+        <div class="step-n">2</div>
+        <h4>白标绑店</h4>
+        <p>回传 TEMU 店铺 Token，一键绑定你的半托管店铺（方果全程隐身）。</p>
+      </div>
+      <div class="step rv">
+        <div class="step-n">3</div>
+        <h4>选品出单</h4>
+        <p>选品中心挑工厂商品，出单后系统自动从 TEMU 拉取订单。</p>
+      </div>
+      <div class="step rv">
+        <div class="step-n">4</div>
+        <h4>推单代发</h4>
+        <p>绑定工厂 SKU、付款推送，工厂生产发货、物流自动回传。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-sec">
+  <div class="wrap">
+    <div class="cta-card rv">
+      <h2>现在开始，<span class="g">零库存做 TEMU</span></h2>
+      <p>工厂直供、一键代发，你只管选品与运营，赚取货品价差。</p>
+      <div class="cta-btns">
+        <a href="https://pod.ddddnet.cn" target="_blank" class="btn btn-p btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          立即进入平台
+        </a>
+      </div>
+      <div class="cta-note">目前支持 TEMU 半托管 · 中国区/美区/欧区/全球 · 工厂直供一件代发</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="sec-div"></div>
+      <div class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>常见问题</div>
+      <h2 class="h2">你可能想<span class="g">了解的问题</span></h2>
+      <p class="sub">如果你有其他疑问，随时联系我们。</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq rv">
+        <button class="faq-q" onclick="toggleF(this)">
+          <span>轩宇汇是什么？</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a"><p>轩宇汇是面向 TEMU 半托管散户卖家的 POD 一件代发分销中台。我们对接 POD 工厂，你负责选品与店铺运营，工厂负责生产发货，你赚取货品价差，全程零库存。</p></div>
+      </div>
+      <div class="faq rv">
+        <button class="faq-q" onclick="toggleF(this)">
+          <span>需要自己备货、发货吗？</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a"><p>不需要。轩宇汇对接 POD 工厂，订单审核通过后由工厂直接生产发货，物流单号自动回写 TEMU。你零库存、零物流，只做选品与运营。</p></div>
+      </div>
+      <div class="faq rv">
+        <button class="faq-q" onclick="toggleF(this)">
+          <span>支持哪些 TEMU 区域？</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a"><p>支持 TEMU 半托管的 中国区(125) / 美区(225) / 欧区(325) / 全球(525) 店铺。全托管模式暂不支持。</p></div>
+      </div>
+      <div class="faq rv">
+        <button class="faq-q" onclick="toggleF(this)">
+          <span>如何开始使用？</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a"><p>访问 pod.ddddnet.cn 注册账号，绑定你的 TEMU 店铺，进入选品中心挑选工厂商品即可。整个流程几分钟就能上手。</p></div>
+      </div>
+      <div class="faq rv">
+        <button class="faq-q" onclick="toggleF(this)">
+          <span>资金安全吗？</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a"><p>付款推送即扣账户余额，管理员审核通过后才推单到工厂；若审核驳回，款项自动原路退回。订单数据采用多租户隔离，安全存储。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-in">
+    <div class="foot-brand">
+      <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <div class="logo-ic">轩</div>
+        <span class="logo-t">轩宇汇</span>
+      </div>
+      <p>面向 TEMU 半托管散户卖家的 POD 一件代发分销中台。工厂直供，零库存创业，你只管选品运营，赚取货品价差。</p>
+      <p style="margin-top:12px;font-size:13px;color:var(--text3)"><a href="/blog/" style="color:var(--text3);border-bottom:1px dashed var(--border3)">跨境电商代发运营博客 →</a></p>
+      <div class="foot-copy">© 2025-2026 轩宇汇. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleM(){document.getElementById('mmenu').classList.toggle('open')}
+function toggleF(b){const i=b.parentElement;const a=i.classList.contains('active');document.querySelectorAll('.faq').forEach(f=>f.classList.remove('active'));if(!a)i.classList.add('active')}
+const obs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('show')}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+window.addEventListener('scroll',()=>{const n=document.getElementById('nav');if(window.scrollY>20)n.classList.add('scrolled');else n.classList.remove('scrolled')});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const h=this.getAttribute('href');if(h==='#')return;const t=document.querySelector(h);if(t){e.preventDefault();window.scrollTo({top:t.offsetTop-68,behavior:'smooth'})}})});
+</script>
+</body>
+</html>

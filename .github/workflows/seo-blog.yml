@@ -1,0 +1,76 @@
+name: SEO Blog Auto Generator
+
+# 每小时自动生成一篇 SEO 文章；push 到 main 时也触发生成；支持手动触发
+on:
+  schedule:
+    - cron: '0 * * * *'  # UTC 每整点执行（每小时1篇）
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'scripts/**'
+      - '.github/workflows/seo-blog.yml'
+  workflow_dispatch: {}   # 支持手动触发
+
+permissions:
+  contents: write  # 允许自动提交推送
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0  # 获取完整历史，便于判断最近提交者
+
+      - name: 防止循环触发
+        id: check
+        run: |
+          # 如果是 schedule 或 workflow_dispatch 触发，直接放行
+          if [[ "${{ github.event_name }}" != "push" ]]; then
+            echo "skip=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          # push 触发：检查最近一次提交是否由 bot 发起，避免无限循环
+          LAST_COMMITTER=$(git log -1 --pretty='%ae')
+          if [[ "$LAST_COMMITTER" == "github-actions[bot]@users.noreply.github.com" ]]; then
+            echo "检测到 bot 自动提交，跳过本次执行以防循环"
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+
+      - name: 生成 SEO 文章
+        id: generate
+        if: steps.check.outputs.skip != 'true'
+        env:
+          BIGMODEL_API_KEY: ${{ secrets.BIGMODEL_API_KEY }}
+        run: node scripts/generate-seo.js
+
+      - name: 推送到搜索引擎 (Bing/百度)
+        if: success() && steps.check.outputs.skip != 'true'
+        env:
+          BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}
+        run: node scripts/push-seo.js
+
+      - name: 提交并推送 (含日志)
+        if: success() && steps.check.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add blog/ sitemap.xml scripts/generated.json scripts/push-log.json
+          git add scripts/topics-hot.json 2>/dev/null || true
+          # 没有变更则跳过提交
+          if git diff --staged --quiet; then
+            echo "没有变更，跳过提交"
+            exit 0
+          fi
+          git commit -m "chore(seo): auto-generate blog post $(date -u '+%Y-%m-%d %H:%M')"
+          git push

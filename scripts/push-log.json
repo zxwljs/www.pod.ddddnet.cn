@@ -1,19 +1,20 @@
 {
-  "updatedAt": "2026-09-02T16:56:47.327Z",
-  "urlCount": 5,
+  "updatedAt": "2026-09-02T19:37:33.697Z",
+  "urlCount": 6,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
     "https://www.pod.ddddnet.cn/blog/posts/optimizing-product-detail-page-for-temu-semi-managed-sellers.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-seller-factory-direct-distribution-store-promotion-sign-up-strategy.html",
-    "https://www.pod.ddddnet.cn/blog/posts/no-capital-pod-side-business.html"
+    "https://www.pod.ddddnet.cn/blog/posts/no-capital-pod-side-business.html",
+    "https://www.pod.ddddnet.cn/blog/posts/how-to-set-prices-for-fba-sellers-on-temu.html"
   ],
   "results": {
     "indexnow": {
       "success": true,
       "status": 200,
       "endpoint": "https://api.indexnow.org/indexnow",
-      "urlCount": 5
+      "urlCount": 6
     },
     "bing": {
       "success": false,

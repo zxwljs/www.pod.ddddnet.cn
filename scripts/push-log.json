@@ -1,1 +1,32 @@
-{}
+{
+  "updatedAt": "2026-09-03T05:24:23.860Z",
+  "urlCount": 7,
+  "urls": [
+    "https://www.pod.ddddnet.cn/blog/",
+    "https://www.pod.ddddnet.cn/sitemap.xml",
+    "https://www.pod.ddddnet.cn/blog/posts/no-capital-pod-side-business.html",
+    "https://www.pod.ddddnet.cn/blog/posts/how-to-set-prices-for-fba-sellers-on-temu.html",
+    "https://www.pod.ddddnet.cn/blog/posts/podsources-for-temu-semi-managed-sellers.html",
+    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-logistics-platform-selection.html",
+    "https://www.pod.ddddnet.cn/blog/posts/pod-print-on-demand-distribution-model-analysis-zero-inventory-one-stop-delivery-easily-sell-around-the-world.html"
+  ],
+  "results": {
+    "indexnow": {
+      "success": true,
+      "status": 200,
+      "endpoint": "https://api.indexnow.org/indexnow",
+      "urlCount": 7
+    },
+    "bing": {
+      "success": false,
+      "status": 404,
+      "error": ""
+    },
+    "baidu": {
+      "success": false,
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-09-02T09:17:01.485Z"
+    }
+  }
+}

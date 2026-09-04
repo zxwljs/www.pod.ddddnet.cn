@@ -27,6 +27,8 @@ const CONFIG = {
 
 // 读取选题库
 const { site, topics } = require('./topics');
+// 读取图片素材库（自动发现 img/ 下图片，按场景命名复用）
+const { buildCatalog, formatImagesForPrompt } = require('./image-catalog');
 CONFIG.siteUrl = site.url;
 CONFIG.appUrl = site.appUrl;
 CONFIG.siteName = site.name;
@@ -225,6 +227,33 @@ async function callGLM(topic) {
     ? '\n注意：这个主题之前已经写过，请从全新的角度切入，避免与已有内容重复。'
     : '';
 
+  // 图片素材库：自动发现 img/ 下图片，交给模型按相关性挑图（可复用、不强塞）
+  const imageCatalog = buildCatalog({
+    siteUrl: CONFIG.siteUrl,
+    rootDir: path.join(__dirname, '..'),
+    cachePath: path.join(__dirname, 'image-catalog.json'),
+  });
+  const imageList = formatImagesForPrompt(imageCatalog);
+  const imageSection = imageList
+    ? `
+
+【图片素材库（站内存图，可在不同文章中复用，禁止引用列表外的链接）】
+以下是网站已有的图片素材，每行格式为「序号. [分类 / 场景] 图片URL」：
+${imageList}
+
+用图要求（非常重要）：
+- 只能在上面清单里挑选图片插入正文，严禁编造或引用清单外的任何图片链接。
+- 只有当某张图的「场景」与当前段落主题强相关时，才在该段落之后自然插入该图；若清单里没有贴合当前文章的图，可以一张都不插，绝不为凑图而硬套。
+- 单篇文章最多插入 2-3 张图，且同一张图在一篇文章内不要重复出现。
+- 不同文章可以复用同一张图；若多篇都适合某类图，优先换用同类别里不同的一张，避免长期总是同一张。
+- 插入方式（直接用 HTML，不要 markdown 图片语法）：
+  <figure class="article-figure">
+    <img src="图片URL" alt="贴合该图内容的中文描述" loading="lazy" />
+    <figcaption>一句话图注（可选，说明这张图在讲什么）</figcaption>
+  </figure>
+- 图片放在相关段落之间或段落后，不要堆在开头或结尾。`
+    : '';
+
   const prompt = `你是做了5年Temu半托管的跨境卖家，擅长写实操干货。文风接地气，像同行分享经验，不像AI也不像软文。
 
 写一篇关于「${topic.topic}」的文章，读者是Temu半托管卖家。
@@ -242,7 +271,7 @@ SEO关键词：${topic.keywords.join('、')}
 
 轩宇汇（pod.ddddnet.cn）是 Temu 半托管卖家的美国源头 POD 工厂：自有工厂直供可卖的 POD 货品——服装（T恤/卫衣/帽子）、水杯马克杯、帆布包、手机壳等。卖家零库存、无资金压力，顾客在 Temu 下单后，轩宇汇美国工厂直接印刷代发、物流回传，你只赚货品价差，把货卖向全球。
 
-全文提及「轩宇汇」或「pod.ddddnet.cn」2-3次，像推荐美国源头 POD 工厂/货盘一样自然，不要整段介绍工厂。核心叙事：用轩宇汇美国工厂的现成 POD 货盘（服装/T恤、水杯/马克杯等），零库存、一件代发、无资金压力，就能把货卖向全球；先讲 POD 服装/水杯「零库存卖货、无资金压力、全球出货、卖不动就下架零滞销」的机会与痛点，再顺带说轩宇汇美国工厂直供货盘、帮你把货卖出去。文末自然引导：去 pod.ddddnet.cn 用轩宇汇美国工厂的货盘开店卖货。${angleHint}
+全文提及「轩宇汇」或「pod.ddddnet.cn」2-3次，像推荐美国源头 POD 工厂/货盘一样自然，不要整段介绍工厂。核心叙事：用轩宇汇美国工厂的现成 POD 货盘（服装/T恤、水杯/马克杯等），零库存、一件代发、无资金压力，就能把货卖向全球；先讲 POD 服装/水杯「零库存卖货、无资金压力、全球出货、卖不动就下架零滞销」的机会与痛点，再顺带说轩宇汇美国工厂直供货盘、帮你把货卖出去。文末自然引导：去 pod.ddddnet.cn 用轩宇汇美国工厂的货盘开店卖货。${angleHint}${imageSection}
 
 严格按以下格式输出，不要其他内容。注意：[TITLE]、[CONTENT] 等方括号标签是结构分隔符，必须严格保留；但正文（[CONTENT] 和 [/CONTENT] 之间的内容）里不要出现方括号标记。
 
@@ -612,6 +641,10 @@ article ul,article ol{color:var(--text2);font-size:16px;margin:0 0 16px 22px}
 article li{margin-bottom:8px}
 article strong{color:var(--text);font-weight:600}
 article blockquote{border-left:3px solid var(--p1);padding:12px 20px;margin:20px 0;background:var(--surface);border-radius:0 8px 8px 0;color:var(--text2);font-size:15px}
+article img{max-width:100%;height:auto;border-radius:12px;margin:24px 0;box-shadow:0 4px 18px rgba(15,23,42,.08)}
+.article-figure{margin:28px 0;text-align:center}
+.article-figure img{margin:0}
+.article-figure figcaption{font-size:13.5px;color:var(--text3);margin-top:10px;line-height:1.5}
 .cta-box{margin-top:48px;padding:32px;background:linear-gradient(135deg,#eff6ff,#ecfeff);border:1px solid #bfdbfe;border-radius:18px;text-align:center}
 .cta-box h3{font-size:20px;font-weight:700;margin-bottom:10px}
 .cta-box p{color:var(--text2);font-size:15px;margin-bottom:20px}

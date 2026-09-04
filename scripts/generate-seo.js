@@ -296,6 +296,7 @@ english-slug
     messages: [{ role: 'user', content: prompt }],
     temperature: 0.8,
     top_p: 0.9,
+    max_tokens: 4096,
   });
 
   for (let attempt = 1; attempt <= CONFIG.maxRetries; attempt++) {
@@ -682,6 +683,11 @@ footer a{color:var(--text3)}
       <span>阅读约 ${Math.ceil((article.content || '').length / 400)} 分钟</span>
     </div>
     ${mdToHtml(article.content)}
+    <div class="cta-box">
+      <h3>用轩宇汇的货盘，零库存把货卖向全球</h3>
+      <p>服装、水杯等 POD 货品一件代发，无资金压力、无库存风险。立即去 轩宇汇 用现成货盘开店卖货。</p>
+      <a href="${CONFIG.appUrl}" class="cta-btn">直接访问 轩宇汇 →</a>
+    </div>
   </article>
 
 </div>

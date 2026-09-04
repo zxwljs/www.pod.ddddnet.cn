@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-04T12:25:28.989Z",
+  "updatedAt": "2026-09-04T16:41:40.730Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/one-stop-dropshipping-in-2026.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1788503912766.html",
     "https://www.pod.ddddnet.cn/blog/posts/factory-dispatch-global-sales.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-dropshipping-opportunity-zero-inventory-one-stop-shipping-no-capital-pressure-easy-to-sell-globally.html",
-    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-dropshipping-profit-calculation.html"
+    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-dropshipping-profit-calculation.html",
+    "https://www.pod.ddddnet.cn/blog/posts/factory-inventory-skus-mapping-temu-semi-trusted-sellers-guide.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-09-04T12:25:28.989Z"
     }
   }
 }

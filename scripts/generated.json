@@ -17,7 +17,8 @@
     "Temu半托管物流回传怎么设置",
     "工厂货盘如何支持全球卖货",
     "Temu半托管代发机会",
-    "Temu半托管代发利润怎么算"
+    "Temu半托管代发利润怎么算",
+    "工厂货盘SKU映射怎么做"
   ],
   "titles": [],
   "posts": [
@@ -364,7 +365,24 @@
         "零库存",
         "一件代发"
       ]
+    },
+    {
+      "slug": "factory-inventory-skus-mapping-temu-semi-trusted-sellers-guide",
+      "title": "工厂货盘SKU映射怎么做？Temu半托管卖家必看！",
+      "description": "本文将详细介绍Temu平台半托管卖家如何进行工厂货盘SKU映射操作，帮助您轻松实现零库存、一件代发，快速拓展全球市场！",
+      "category": "美国源头工厂直供",
+      "date": "2026-09-04",
+      "keywords": [
+        "工厂货盘",
+        "SKU映射",
+        "代发",
+        "Temu半托管",
+        "POD",
+        "零库存",
+        "一件代发",
+        "全球出货"
+      ]
     }
   ],
-  "count": 18
+  "count": 19
 }

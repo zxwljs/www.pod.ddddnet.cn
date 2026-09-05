@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-05T14:22:03.741Z",
+  "updatedAt": "2026-09-05T17:03:33.992Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1788565856481.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-one-stop-dropshipping-complete-process-tutorial.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-distribution-after-sales-tips.html",
     "https://www.pod.ddddnet.cn/blog/posts/pod-meishe-tiaoke-shangjia-maihuo.html",
-    "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-mode.html"
+    "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-mode.html",
+    "https://www.pod.ddddnet.cn/blog/posts/american-factory-pod-logistics-turnaround-time.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-09-05T14:22:03.741Z"
     }
   }
 }

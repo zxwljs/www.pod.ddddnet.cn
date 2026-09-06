@@ -29,7 +29,8 @@
     "美国工厂POD物流回传时效",
     "POD代发避免版权侵权",
     "POD代发适合新手吗",
-    "一件代发跨境电商入门"
+    "一件代发跨境电商入门",
+    "跨境供应链数字化"
   ],
   "titles": [],
   "posts": [
@@ -595,7 +596,22 @@
         "跨境电商",
         "入门"
       ]
+    },
+    {
+      "slug": "cross-border-supply-chain-digitalization-zero-inventory-one-click-delivery",
+      "title": "跨境供应链数字化：如何轻松实现零库存、一件代发？",
+      "description": "本文将详细介绍如何通过数字化手段优化跨境供应链管理，实现零库存和一件代发，帮助Temu半托管卖家轻松应对市场竞争。",
+      "category": "行业趋势",
+      "date": "2026-09-06",
+      "keywords": [
+        "跨境",
+        "供应链",
+        "数字化",
+        "Temu",
+        "零库存",
+        "一件代发"
+      ]
     }
   ],
-  "count": 30
+  "count": 31
 }

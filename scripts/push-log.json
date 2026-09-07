@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-07T18:31:56.583Z",
+  "updatedAt": "2026-09-07T21:52:00.553Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/temu-multiple-regions-shop-management-from-125-to-525-practical-guide.html",
     "https://www.pod.ddddnet.cn/blog/posts/factory-dispatch-vs-platform-distribution-for-temu-semi-managed-sellers.html",
     "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-industry-report-how-to-start-global-market-with-pod-mode.html",
     "https://www.pod.ddddnet.cn/blog/posts/american-factory-direct-supply-price-advantage.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1788805914495.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1788805914495.html",
+    "https://www.pod.ddddnet.cn/blog/posts/article-1788817919676.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-09-07T18:31:56.583Z"
     }
   }
 }

@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-08T16:58:50.537Z",
+  "updatedAt": "2026-09-08T19:46:02.031Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-newbie-start.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-pod-platform-recommendation.html",
     "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-multiple-stores-management.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-seller-reviews-maintenance-guide.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1788886729786.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1788886729786.html",
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1788896759756.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-09-07T18:31:56.583Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

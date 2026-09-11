@@ -66,7 +66,8 @@
     "代发店铺主图规范",
     "Temu半托管代发选品技巧",
     "POD一件代发是什么",
-    "POD代发生意怎么起步"
+    "POD代发生意怎么起步",
+    "跨境代发独立站vs平台"
   ],
   "titles": [],
   "posts": [
@@ -1275,7 +1276,20 @@
         "创业起步",
         "零库存"
       ]
+    },
+    {
+      "slug": "temu-semi-trusted-seller-independent-station-vs-platform",
+      "title": "Temu半托管卖家的选择：独立站还是平台？",
+      "description": "对于Temu半托管的卖家来说，是选择独立站还是平台发货？本文将深入探讨两者的区别，并提供实用的操作建议。",
+      "category": "跨境干货",
+      "date": "2026-09-11",
+      "keywords": [
+        "跨境代发",
+        "独立站",
+        "平台",
+        "Temu半托管"
+      ]
     }
   ],
-  "count": 67
+  "count": 68
 }

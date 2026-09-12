@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-12T21:59:31.704Z",
+  "updatedAt": "2026-09-12T23:52:05.966Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1789213921884.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1789224410459.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-pod-platform-selection.html",
     "https://www.pod.ddddnet.cn/blog/posts/poddifference-temusemiconfinedseller.html",
-    "https://www.pod.ddddnet.cn/blog/posts/cross-border-dropshipping-returns-guide.html"
+    "https://www.pod.ddddnet.cn/blog/posts/cross-border-dropshipping-returns-guide.html",
+    "https://www.pod.ddddnet.cn/blog/posts/pod-market-prospects-zero-inventory-one-click-global-sales.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,7 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-09-11T23:46:17.996Z"
+      "error": "fetch failed"
     }
   }
 }

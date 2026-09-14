@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-14T00:34:42.398Z",
+  "updatedAt": "2026-09-14T05:37:28.886Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/pod-one-stop-selling-guide.html",
     "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-tax-compliance-guide.html",
     "https://www.pod.ddddnet.cn/blog/posts/pods-mug-mark-cup-cross-border-selling.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1789339596501.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1789346080493.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1789346080493.html",
+    "https://www.pod.ddddnet.cn/blog/posts/temu-pod-global-shipment.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-09-14T00:34:42.398Z"
     }
   }
 }

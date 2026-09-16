@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-16T05:37:47.510Z",
+  "updatedAt": "2026-09-16T10:37:51.045Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1789485757600.html",
     "https://www.pod.ddddnet.cn/blog/posts/pod-one-piece-distribution-zero-inventory-no-pressure-global-selling.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1789511818642.html",
     "https://www.pod.ddddnet.cn/blog/posts/pod-distribution-profit-analysis-tumu-half-trusted-seller-secret-weapon.html",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1789537066605.html"
+    "https://www.pod.ddddnet.cn/blog/posts/article-1789537066605.html",
+    "https://www.pod.ddddnet.cn/blog/posts/optimizing-pod-product-detail-page.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-09-15T05:39:18.623Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

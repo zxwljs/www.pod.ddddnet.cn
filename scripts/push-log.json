@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-18T14:44:24.852Z",
+  "updatedAt": "2026-09-18T18:00:32.959Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1789684497973.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1789693005586.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1789709436103.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1789726926968.html",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1789742662496.html"
+    "https://www.pod.ddddnet.cn/blog/posts/article-1789742662496.html",
+    "https://www.pod.ddddnet.cn/blog/posts/pod-market-outlook-temu-semi-managed-sellers.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-09-18T14:44:24.852Z"
     }
   }
 }

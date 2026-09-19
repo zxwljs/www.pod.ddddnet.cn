@@ -2115,7 +2115,19 @@
         "客服沟通",
         "售后优化"
       ]
+    },
+    {
+      "slug": "temu-logistics-return-setup",
+      "title": "Temu半托管物流回传怎么设置？",
+      "description": "本文将详细介绍Temu平台半托管的物流回传设置方法，帮助您快速上手操作，实现零库存、一件代发，轻松在全球市场销售商品。",
+      "category": "Temu半托管代发",
+      "date": "2026-09-19",
+      "keywords": [
+        "Temu物流回传",
+        "运单号",
+        "半托管"
+      ]
     }
   ],
-  "count": 114
+  "count": 115
 }

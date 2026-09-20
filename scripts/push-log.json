@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-20T17:50:42.176Z",
+  "updatedAt": "2026-09-20T20:06:52.783Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1789864349063.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1789882549610.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1789899832602.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-pod-semi-warehouse-selling-products.html",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1789926639397.html"
+    "https://www.pod.ddddnet.cn/blog/posts/article-1789926639397.html",
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1789934812004.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-09-20T17:50:42.176Z"
     }
   }
 }

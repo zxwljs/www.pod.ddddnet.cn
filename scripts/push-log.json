@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-21T17:36:45.214Z",
+  "updatedAt": "2026-09-21T21:32:07.505Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/pod-market-temu-semi-managed-sellers.html",
     "https://www.pod.ddddnet.cn/blog/posts/pod-one-piece-distribution-traditional-stock-risks.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1789969535656.html",
     "https://www.pod.ddddnet.cn/blog/posts/pod-print-on-demand-distribution-model-analysis.html",
-    "https://www.pod.ddddnet.cn/blog/posts/cross-border-distribution-independent-station-vs-platform-how-to-choose-your-mode.html"
+    "https://www.pod.ddddnet.cn/blog/posts/cross-border-distribution-independent-station-vs-platform-how-to-choose-your-mode.html",
+    "https://www.pod.ddddnet.cn/blog/posts/factory-direct-supply-after-sales-processing-1790026322779.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-09-20T17:50:42.176Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

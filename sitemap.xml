@@ -798,4 +798,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.pod.ddddnet.cn/blog/posts/cross-border-distribution-independent-station-vs-platform-how-to-choose-your-mode.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

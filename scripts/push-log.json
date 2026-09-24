@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-23T21:56:31.820Z",
+  "updatedAt": "2026-09-24T00:12:24.754Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/dai-fa-seller-chu-hai-qiu-jiao-zhao-xian-ling-cun-guo-yi-yi-ji-dai-fa-sheng-ke-qing-song-kaiqi-guo-bai-hua-zhi-lu.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790147234665.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-seller-data-analysis.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1790186894449.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790200590812.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790200590812.html",
+    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-pod-products-selling-tips.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-09-22T22:36:45.365Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

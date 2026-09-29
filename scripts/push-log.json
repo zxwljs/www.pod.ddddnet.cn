@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-29T00:52:47.404Z",
+  "updatedAt": "2026-09-29T06:29:34.572Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/high-profit-c-categories-with-dropshipping-model.html",
     "https://www.pod.ddddnet.cn/blog/posts/optimizing-detailed-page-for-sales.html",
     "https://www.pod.ddddnet.cn/blog/posts/pod-huopan-xuanpin-fuzhuang-huiyi-shuibai.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-one-click-dropshipping-complete-process-tutorial.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790643164836.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790643164836.html",
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790663367748.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-09-28T06:12:27.373Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

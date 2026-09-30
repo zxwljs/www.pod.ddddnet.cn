@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-30T03:24:22.395Z",
+  "updatedAt": "2026-09-30T10:11:02.959Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790663367748.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1790689130216.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1790708571256.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1790724001227.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790738661471.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790738661471.html",
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790763060411.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-09-29T06:29:34.572Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

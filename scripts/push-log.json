@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-02T18:52:11.048Z",
+  "updatedAt": "2026-10-02T22:44:27.784Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/temu-pod-new-product-flow.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790900675794.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790922732228.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1790947556921.html",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1790967124754.html"
+    "https://www.pod.ddddnet.cn/blog/posts/article-1790967124754.html",
+    "https://www.pod.ddddnet.cn/blog/posts/newbie-pod-clothing-from-zero-to-sales.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-10-02T18:52:11.048Z"
     }
   }
 }

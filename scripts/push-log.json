@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-02T13:25:57.628Z",
+  "updatedAt": "2026-10-02T18:52:11.048Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-one-click-dispatch-complete-process-tutorial.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-pod-new-product-flow.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790900675794.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1790922732228.html",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1790947556921.html"
+    "https://www.pod.ddddnet.cn/blog/posts/article-1790947556921.html",
+    "https://www.pod.ddddnet.cn/blog/posts/article-1790967124754.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-10-01T14:16:20.542Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

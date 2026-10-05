@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-05T17:40:43.546Z",
+  "updatedAt": "2026-10-05T23:33:47.830Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-dropshipping-product-selection-tips.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1791151764207.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1791163696930.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-seller-data-analysis.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1791222042878.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1791222042878.html",
+    "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-platform-comparison.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-10-04T22:09:27.927Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

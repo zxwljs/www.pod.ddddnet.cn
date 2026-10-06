@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-05T23:33:47.830Z",
+  "updatedAt": "2026-10-06T04:14:06.675Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1791151764207.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1791163696930.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-seller-data-analysis.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1791222042878.html",
-    "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-platform-comparison.html"
+    "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-platform-comparison.html",
+    "https://www.pod.ddddnet.cn/blog/posts/pod-vs-traditional-inventory-risk.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-10-05T23:33:47.830Z"
     }
   }
 }

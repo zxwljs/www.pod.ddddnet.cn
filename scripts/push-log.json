@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-11T08:06:39.564Z",
+  "updatedAt": "2026-10-11T15:14:36.856Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-payment-plan-temu-semi-trusted-shop.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1791655767753.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1791670111717.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1791682030239.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1791705998555.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1791705998555.html",
+    "https://www.pod.ddddnet.cn/blog/posts/temu-push-order-factory.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-10-10T13:11:51.903Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

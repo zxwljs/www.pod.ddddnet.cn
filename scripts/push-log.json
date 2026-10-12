@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-12T11:32:05.155Z",
+  "updatedAt": "2026-10-12T20:42:18.965Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/temu-push-order-factory.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1791748216430.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-automated-order-pull-guide.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-seller-pod-printing-distribution-tips.html",
-    "https://www.pod.ddddnet.cn/blog/posts/factory-direct-supply-after-sales-processing-1791804724579.html"
+    "https://www.pod.ddddnet.cn/blog/posts/factory-direct-supply-after-sales-processing-1791804724579.html",
+    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-pod-product-selling.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-10-11T15:14:36.856Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

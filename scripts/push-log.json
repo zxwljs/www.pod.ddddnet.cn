@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-14T21:10:30.278Z",
+  "updatedAt": "2026-10-15T00:14:01.088Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1791941467887.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-pod-automation-process.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1791981643717.html",
     "https://www.pod.ddddnet.cn/blog/posts/pod-agent-selection-methodology.html",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1792012229700.html"
+    "https://www.pod.ddddnet.cn/blog/posts/article-1792012229700.html",
+    "https://www.pod.ddddnet.cn/blog/posts/podselling-fashion-vs-gadgets.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-10-13T22:09:35.136Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

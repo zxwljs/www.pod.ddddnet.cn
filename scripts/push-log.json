@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-18T02:29:36.844Z",
+  "updatedAt": "2026-10-18T07:39:24.484Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1792255603238.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1792263519923.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1792271908923.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1792280485738.html",
-    "https://www.pod.ddddnet.cn/blog/posts/using-premade-pod-disks-opportunity.html"
+    "https://www.pod.ddddnet.cn/blog/posts/using-premade-pod-disks-opportunity.html",
+    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-seller-guide-to-dropshipping-product-image-guidelines.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-10-18T02:29:36.844Z"
     }
   }
 }

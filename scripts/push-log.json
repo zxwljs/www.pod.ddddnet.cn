@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-19T00:40:58.360Z",
+  "updatedAt": "2026-10-19T05:34:23.593Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1792326117731.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-half-shop-rating-maintenance.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1792350599147.html",
     "https://www.pod.ddddnet.cn/blog/posts/pod-dai-fa-huo-xuan-yuan-gou-gong-ye-temu-ban-tu-guan-mai-ye-de-zui-jia-shi-liang.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1792370456155.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1792370456155.html",
+    "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-industry-report-tumu-semi-managed-sellers-opportunities-and-challenges.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-10-18T02:29:36.844Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

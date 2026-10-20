@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-20T06:58:47.771Z",
+  "updatedAt": "2026-10-20T12:35:04.656Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1792410376835.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1792433215766.html",
     "https://www.pod.ddddnet.cn/blog/posts/2026-pod-opportunity-temu-semi-trusted.html",
     "https://www.pod.ddddnet.cn/blog/posts/poddie-startup-guide.html",
-    "https://www.pod.ddddnet.cn/blog/posts/global-selling-pod-logistics-solutions-for-temu-semi-managed-sellers.html"
+    "https://www.pod.ddddnet.cn/blog/posts/global-selling-pod-logistics-solutions-for-temu-semi-managed-sellers.html",
+    "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-platform-comparison-tumu-semi-managed.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-10-20T06:58:47.771Z"
     }
   }
 }

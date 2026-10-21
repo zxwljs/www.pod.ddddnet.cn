@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-21T15:51:28.320Z",
+  "updatedAt": "2026-10-21T19:51:47.380Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1792530385299.html",
     "https://www.pod.ddddnet.cn/blog/posts/crossborderfulfillmentindependentsitevsplatform.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-half-trusted-distribution-selection-techniques.html",
     "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-platform-comparison-best-choice-for-temu-semi-trusted-sellers.html",
-    "https://www.pod.ddddnet.cn/blog/posts/temu-half-trusted-one-stop-dispatch-complete-process-tutorial.html"
+    "https://www.pod.ddddnet.cn/blog/posts/temu-half-trusted-one-stop-dispatch-complete-process-tutorial.html",
+    "https://www.pod.ddddnet.cn/blog/posts/pod-one-stop-dropshipping-cross-border-clothing-business.html"
   ],
   "results": {
     "indexnow": {
@@ -19,7 +19,7 @@
     },
     "bing": {
       "success": false,
-      "status": 404,
+      "status": 502,
       "error": ""
     },
     "baidu": {

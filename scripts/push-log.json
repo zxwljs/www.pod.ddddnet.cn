@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-21T10:58:35.181Z",
+  "updatedAt": "2026-10-21T15:51:28.320Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/optimizing-detail-page-for-dropshipping-tumu-half-trusted-sellers.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1792530385299.html",
     "https://www.pod.ddddnet.cn/blog/posts/crossborderfulfillmentindependentsitevsplatform.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-half-trusted-distribution-selection-techniques.html",
-    "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-platform-comparison-best-choice-for-temu-semi-trusted-sellers.html"
+    "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-platform-comparison-best-choice-for-temu-semi-trusted-sellers.html",
+    "https://www.pod.ddddnet.cn/blog/posts/temu-half-trusted-one-stop-dispatch-complete-process-tutorial.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-10-21T10:58:35.181Z"
     }
   }
 }

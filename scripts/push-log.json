@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-20T21:06:56.231Z",
+  "updatedAt": "2026-10-21T00:18:06.531Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/poddie-startup-guide.html",
     "https://www.pod.ddddnet.cn/blog/posts/global-selling-pod-logistics-solutions-for-temu-semi-managed-sellers.html",
     "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-platform-comparison-tumu-semi-managed.html",
     "https://www.pod.ddddnet.cn/blog/posts/optimizing-detail-page-for-dropshipping-tumu-half-trusted-sellers.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1792530385299.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1792530385299.html",
+    "https://www.pod.ddddnet.cn/blog/posts/crossborderfulfillmentindependentsitevsplatform.html"
   ],
   "results": {
     "indexnow": {
@@ -19,8 +19,8 @@
     },
     "bing": {
       "success": false,
-      "status": 504,
-      "error": "<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>\nAn error occurred while processing your request.<p>\nReference&#32;&#35;221&#46;3a643017&#46;1792530386&#46;41366324\n<P>https&#58;&#47;&#47;errors&#46;edge"
+      "status": 404,
+      "error": ""
     },
     "baidu": {
       "success": false,

@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-23T15:35:12.321Z",
+  "updatedAt": "2026-10-23T19:42:10.423Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/one-piece-dispatch-still-doable-in-2026.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1792714761784.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1792733906236.html",
     "https://www.pod.ddddnet.cn/blog/posts/usa-factory-pod-logistics-delivery-time-usa-temu-semi-trusted-seller.html",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1792769709645.html"
+    "https://www.pod.ddddnet.cn/blog/posts/article-1792769709645.html",
+    "https://www.pod.ddddnet.cn/blog/posts/article-1792784529637.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-10-23T15:35:12.321Z"
     }
   }
 }

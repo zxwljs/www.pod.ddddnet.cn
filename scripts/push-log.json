@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-24T15:11:13.145Z",
+  "updatedAt": "2026-10-24T18:30:29.229Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-independent-station-vs-platform.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1792804703097.html",
     "https://www.pod.ddddnet.cn/blog/posts/crossborderlogisticsmodelfortemu.html",
     "https://www.pod.ddddnet.cn/blog/posts/american-factory-direct-supply-one-stop-distribution-process.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1792854672376.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1792854672376.html",
+    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-trusted-distribution-opportunities.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-10-23T15:35:12.321Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

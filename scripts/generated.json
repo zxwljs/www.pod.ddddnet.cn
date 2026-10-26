@@ -5722,7 +5722,20 @@
         "一件代发",
         "全球销售"
       ]
+    },
+    {
+      "slug": "temu-half-trusted-distribution-trap-avoidance-guide",
+      "title": "Temu半托管代发避坑指南",
+      "description": "本文为你揭秘Temu半托管代发模式中的常见坑点，并提供实用的避坑策略和操作技巧，助你在Temu平台上顺利开展跨境生意！",
+      "category": "Temu半托管代发",
+      "date": "2026-10-26",
+      "keywords": [
+        "Temu",
+        "代发",
+        "避坑",
+        "半托管"
+      ]
     }
   ],
-  "count": 311
+  "count": 312
 }

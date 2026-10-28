@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-28T00:11:26.455Z",
+  "updatedAt": "2026-10-28T06:30:25.560Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/use-xuanyu-hu-usa-factory-wholesale-to-open-shop.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1793093443233.html",
     "https://www.pod.ddddnet.cn/blog/posts/choose-right-product-tool-start-cross-border-business-easily.html",
     "https://www.pod.ddddnet.cn/blog/posts/newbies-selling-tshirts-pod-mode.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1793146283554.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1793146283554.html",
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1793169024661.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-10-28T00:11:26.455Z"
     }
   }
 }

@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-28T23:46:52.026Z",
+  "updatedAt": "2026-10-29T03:49:28.175Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1793146283554.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1793169024661.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-pod-platform-recommendations-xuan-yu-hui-helps-temu-semi-managed-sellers-easily-explore-overseas-market.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1793214831124.html",
-    "https://www.pod.ddddnet.cn/blog/posts/pod-custom-goods-dropshipping-tutorial-zero-inventory-one-stop-global-sales.html"
+    "https://www.pod.ddddnet.cn/blog/posts/pod-custom-goods-dropshipping-tutorial-zero-inventory-one-stop-global-sales.html",
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1793245764614.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-10-28T00:11:26.455Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

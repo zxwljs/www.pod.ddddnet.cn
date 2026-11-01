@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-01T08:32:10.166Z",
+  "updatedAt": "2026-11-01T15:39:55.217Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/temu-data-analysis-indicators.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-pod-data-analysis-indicators.html",
     "https://www.pod.ddddnet.cn/blog/posts/cross-border-supply-chain-digitalization-temu-semi-trusted-sellers-new-opportunities-1793485081946.html",
     "https://www.pod.ddddnet.cn/blog/posts/source-factory-inventory-risk-management.html",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1793521929402.html"
+    "https://www.pod.ddddnet.cn/blog/posts/article-1793521929402.html",
+    "https://www.pod.ddddnet.cn/blog/posts/temu-dai-fa-xin-pin-li-luo-kou-qiu-zhan-shi-gui-zhang.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-10-31T14:10:09.788Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

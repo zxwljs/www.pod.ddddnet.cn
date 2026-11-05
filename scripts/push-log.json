@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-04T22:19:16.884Z",
+  "updatedAt": "2026-11-05T03:00:26.156Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1793690813836.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1793720501574.html",
     "https://www.pod.ddddnet.cn/blog/posts/utilizing-cross-border-logistics-saas-for-temu-store.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1793780708048.html",
-    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-seller-compliance-guide.html"
+    "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-seller-compliance-guide.html",
+    "https://www.pod.ddddnet.cn/blog/posts/usa-factory-direct-supply-order-review-process-for-temu-semi-managed-sellers.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-11-04T01:48:32.963Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

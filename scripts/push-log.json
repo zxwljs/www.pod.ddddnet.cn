@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-08T07:00:20.601Z",
+  "updatedAt": "2026-11-08T14:11:37.685Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1794024043844.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1794050763665.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-push-factory-zero-inventory-one-stop-distribution.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-seller-zero-inventory-entrepreneurship-1794086239749.html",
-    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1794121218759.html"
+    "https://www.pod.ddddnet.cn/blog/posts/english-slug-1794121218759.html",
+    "https://www.pod.ddddnet.cn/blog/posts/zero-inventory-pod-global-sales-profitability.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-11-07T11:26:06.375Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

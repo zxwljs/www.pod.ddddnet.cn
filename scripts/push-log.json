@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-13T08:58:21.294Z",
+  "updatedAt": "2026-11-13T16:58:21.636Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/dai-fa-mai-shang-de-ding-pin-fen-xi-dui-yu-tou-bi-yao-du-you-wei-chu-yu.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-pod-market-outlook-zero-inventory-one-click-ship-global.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-semi-managed-and-full-managed-can-do-dropshipping.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-pod-goods-selection-clothing-vs-water-bottles.html",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1794560300547.html"
+    "https://www.pod.ddddnet.cn/blog/posts/article-1794560300547.html",
+    "https://www.pod.ddddnet.cn/blog/posts/temu-half-trusted-distribution-platform-selection.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-11-12T12:02:37.467Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

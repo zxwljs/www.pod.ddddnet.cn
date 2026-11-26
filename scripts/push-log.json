@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-25T21:07:52.754Z",
+  "updatedAt": "2026-11-26T03:52:59.343Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/optimizing-dropshipping-product-detail-page.html",
     "https://www.pod.ddddnet.cn/blog/posts/article-1795545148246.html",
     "https://www.pod.ddddnet.cn/blog/posts/factory-direct-supply-after-sales-processing-1795575198602.html",
     "https://www.pod.ddddnet.cn/blog/posts/temu-push-order-factory-1795607877186.html",
-    "https://www.pod.ddddnet.cn/blog/posts/pod-yi-jian-dai-fa.html"
+    "https://www.pod.ddddnet.cn/blog/posts/pod-yi-jian-dai-fa.html",
+    "https://www.pod.ddddnet.cn/blog/posts/high-profit-categories-in-dropshipping-model.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-11-25T02:53:21.303Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }

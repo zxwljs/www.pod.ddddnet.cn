@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-27T04:42:27.143Z",
+  "updatedAt": "2026-11-27T14:34:42.018Z",
   "urlCount": 7,
   "urls": [
     "https://www.pod.ddddnet.cn/blog/",
     "https://www.pod.ddddnet.cn/sitemap.xml",
-    "https://www.pod.ddddnet.cn/blog/posts/pod-yi-jian-dai-fa.html",
     "https://www.pod.ddddnet.cn/blog/posts/high-profit-categories-in-dropshipping-model.html",
     "https://www.pod.ddddnet.cn/blog/posts/english-slug-1795699594088.html",
     "https://www.pod.ddddnet.cn/blog/posts/cross-border-logistics-saas-tool-temu.html",
-    "https://www.pod.ddddnet.cn/blog/posts/article-1795754543424.html"
+    "https://www.pod.ddddnet.cn/blog/posts/article-1795754543424.html",
+    "https://www.pod.ddddnet.cn/blog/posts/article-1795790081263.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-11-27T04:42:27.143Z"
     }
   }
 }
